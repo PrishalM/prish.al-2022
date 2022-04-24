@@ -13,13 +13,24 @@
   --cream-green-A: #ecded2;
 }
 
-.green-dark-text {
+.dark-green-text {
   color: var(--green-dark);
+}
+
+.primary-text {
+  color: var(--primary-cream);
 }
 
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--primary-cream);
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 700;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 /* Buttons */
@@ -67,16 +78,57 @@ body {
   color: var(--green-dark);
 }
 
-.btn-primary:checked {
+.btn-outline-primary,
+.btn-outline-primary:link,
+.btn-outline-primary:visited {
+  background-color: transparent;
+  border: 3px solid var(--green-dark);
+  border-radius: 50px;
+  height: 60px;
+  width: 170px;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--green-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-outline-primary i {
+  color: var(--green-dark);
+}
+
+.btn-outline-primary:visited {
   box-shadow: 0 0 0 0.25rem rgba(33, 32, 22, 0.5);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--green-dark);
+  border: 3px solid var(--green-dark);
+  color: var(--primary-cream);
+}
+
+.btn-outline-primary:hover i {
+  color: var(--primary-cream);
+}
+
+.btn-outline-primary:focus {
+  box-shadow: 0 0 0 0.25rem rgba(33, 32, 22, 0.5);
+}
+
+.btn-outline-primary:active {
+  background-color: var(--primary-cream);
+  border: 3px solid var(--green-dark);
+  color: var(--green-dark);
 }
 
 /***************************************************/
 /* Header */
-.navbar {
+header {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
+  background-color: var(--primary-cream);
 }
 
 .navbar-brand {
@@ -97,6 +149,8 @@ body {
   background-repeat: no-repeat;
   background-position: 80% bottom;
   height: 500px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .hero-text {
@@ -127,8 +181,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  position: relative;
-  top: 90px;
+  margin-top: 90px;
 }
 
 .social-btn {
@@ -162,4 +215,127 @@ body {
 
 .hero-image img {
   height: 100%;
+}
+
+/***************************************************/
+/* Tech skills section */
+
+.tech-skills-section {
+  background-color: var(--cream-green-A);
+}
+
+.tech-skills-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.skills-container {
+  width: 100%;
+  border-radius: 75px;
+  box-shadow: 0px 0px 20px rgba(85, 81, 55, 0.25);
+  background-color: var(--primary-cream);
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+  justify-content: space-around;
+}
+
+.skill-item {
+  background-color: transparent;
+  border: 0;
+  width: 130px;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-text {
+  text-align: center;
+  font-weight: 500;
+}
+.skills-Btn {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 20px;
+}
+
+/***************************************************/
+/* Expereince section */
+
+.experience-section {
+  background-color: var(--green-dark);
+  color: var(--primary-cream);
+  height: 1130px;
+}
+
+.company-col {
+  display: grid;
+  justify-content: end;
+  text-align: end;
+  align-content: flex-start;
+}
+
+.company-logo-container {
+  background-color: var(--cream-green-A);
+  border-radius: 50px;
+  width: 200px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.company-logo {
+  width: 150px;
+}
+
+.company-name {
+  padding-top: 15px;
+  font-weight: 600;
+}
+
+.company-period {
+  margin-bottom: 0.5rem;
+}
+
+.company-length {
+  margin-top: 0;
+}
+
+.line {
+  width: 10px;
+  height: 100px;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  background-color: var(--cream-green-A);
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: var(--cream-green-A);
+}
+
+.circle-small {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: var(--cream-green-A);
+  padding: 2px;
+  margin-top: 7.5px;
+}
+
+.job-title {
+  font-weight: 700;
+}
+
+.job-detail-1 {
+  font-weight: 500;
+}
+.job-detail-2 {
+  font-weight: 400;
 }
