@@ -17,6 +17,10 @@
   color: var(--green-dark);
 }
 
+.darkest-green-text {
+  color: var(--green-darkest);
+}
+
 .primary-text {
   color: var(--primary-cream);
 }
@@ -256,6 +260,7 @@ header {
   text-align: center;
   font-weight: 500;
 }
+
 .skills-Btn {
   display: flex;
   flex-direction: row-reverse;
@@ -266,9 +271,8 @@ header {
 /* Expereince section */
 
 .experience-section {
-  background-color: var(--green-dark);
+  background-color: var(--primary-green);
   color: var(--primary-cream);
-  height: 1130px;
 }
 
 .company-col {
@@ -305,30 +309,6 @@ header {
   margin-top: 0;
 }
 
-.line {
-  width: 10px;
-  height: 100px;
-  border-top-left-radius: 13px;
-  border-top-right-radius: 13px;
-  background-color: var(--cream-green-A);
-}
-
-.circle {
-  width: 30px;
-  height: 30px;
-  border-radius: 20px;
-  background-color: var(--cream-green-A);
-}
-
-.circle-small {
-  width: 20px;
-  height: 20px;
-  border-radius: 20px;
-  background-color: var(--cream-green-A);
-  padding: 2px;
-  margin-top: 7.5px;
-}
-
 .job-title {
   font-weight: 700;
 }
@@ -338,4 +318,111 @@ header {
 }
 .job-detail-2 {
   font-weight: 400;
+}
+
+.line-tip {
+  height: 300%;
+  width: 10px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background-color: var(--cream-green-A);
+  display: flex;
+  margin: auto;
+}
+
+.line {
+  height: 140%;
+  display: flex;
+  width: 10px;
+  background-color: var(--cream-green-A);
+  margin: auto;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: var(--cream-green-A);
+  margin: auto;
+}
+
+.circle-small {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: var(--cream-green-A);
+  padding: 2px;
+  margin-top: 7.5px;
+  margin: auto;
+}
+
+/***************************************************/
+/* Education section */
+
+.education-section {
+  background-color: var(--cream-green-A);
+  color: var(--green-darkest);
+}
+
+.school-col {
+  display: grid;
+  justify-content: end;
+  text-align: end;
+  align-content: flex-start;
+}
+
+.school-logo-container {
+  background-color: var(--primary-cream);
+  border-radius: 50px;
+  width: 200px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.school-logo {
+  max-width: 150px;
+}
+
+.school-title {
+  font-weight: 700;
+}
+
+.school-date {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.school-description {
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.education-line-tip {
+  height: 300%;
+  width: 10px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background-color: var(--primary-cream);
+  color: var(--primary-cream);
+  display: flex;
+  margin: auto;
+}
+
+.education-line {
+  height: 140%;
+  display: flex;
+  width: 10px;
+  background-color: var(--primary-cream);
+  margin: auto;
+}
+
+.education-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: var(--primary-cream);
+  margin: auto;
 }
