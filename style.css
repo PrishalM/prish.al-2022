@@ -138,6 +138,7 @@ header {
   position: -webkit-sticky;
   top: 0;
   background-color: var(--primary-cream);
+  z-index: 2;
 }
 
 .navbar-brand {
@@ -168,10 +169,16 @@ header {
   padding-right: 0;
 }
 
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+
 .hero-text {
   display: flex;
   flex-direction: column;
-  justify-items: center;
   padding-top: 50px;
 }
 
@@ -187,6 +194,10 @@ header {
   font-size: 24px;
 }
 
+.hero-cta-2 {
+  display: none;
+}
+
 .social-container {
   background-color: var(--cream-green-A);
   border-radius: 50px;
@@ -197,6 +208,7 @@ header {
   align-items: center;
   justify-content: space-between;
   margin-top: 90px;
+  box-shadow: 4px 4px 20px #a19884;
 }
 
 .social-btn {
@@ -232,6 +244,14 @@ header {
   height: 100%;
 }
 
+.gradient {
+  height: 250px;
+  width: 100%;
+  position: relative;
+  bottom: 250px;
+  background-image: linear-gradient(transparent, var(--cream-green-A));
+}
+
 /***************************************************/
 /* Tech skills section */
 
@@ -255,6 +275,10 @@ header {
   padding-left: 25px;
   padding-right: 25px;
   justify-content: space-around;
+}
+
+.mobile-skills-title-container {
+  display: none;
 }
 
 .skill-item {
@@ -557,4 +581,147 @@ hr {
   justify-content: space-between;
   padding-top: 25px;
   padding-bottom: 50px;
+}
+
+/* XS screen and smaller */
+@media screen and (max-width: 576px) {
+  /* Generic */
+  .btn-primary,
+  .btn-primary:link,
+  .btn-primary:visited {
+    height: 50px;
+    width: 175px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  /* Header */
+  .navbar-brand {
+    font-size: 24px;
+  }
+
+  /* Hero */
+  .hero-container {
+    background-image: url("images/Prishal_Makwana.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 80% bottom;
+    height: 500px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .hero-text {
+    padding: 0;
+  }
+
+  .hero-h1 {
+    font-size: 40px;
+  }
+
+  .hero-p {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .mobile-social-container {
+    justify-content: flex-end;
+    display: flex;
+    width: 100%;
+  }
+
+  .social-container {
+    height: 135px;
+    width: 45px;
+    margin-top: 0px;
+  }
+
+  .social-btn {
+    width: 45px;
+    height: 45px;
+  }
+
+  .social-btn i {
+    font-size: 25px;
+  }
+
+  .hero-cta-1 {
+    display: none !important;
+  }
+
+  .hero-cta-2 {
+    display: flex;
+  }
+
+  .mobile-cta-container {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 90px;
+  }
+
+  .gradient {
+    height: 100px;
+    width: 100%;
+    position: relative;
+    bottom: 100px;
+  }
+
+  /* Tech skills */
+  .tech-skills-container {
+    padding-bottom: 50px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .skills-title {
+    display: none;
+  }
+
+  .mobile-skills-title {
+    font-size: 32px;
+    padding-top: 35px;
+    padding-bottom: 25px;
+  }
+
+  .card-body {
+    padding: 0 !important;
+  }
+
+  .skills-container {
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .mobile-skills-title-container {
+    width: 100%;
+    display: flex;
+    padding-left: 12px;
+  }
+
+  .skill-item {
+    width: 40px;
+  }
+
+  .skill-text {
+    font-size: 10px;
+  }
+}
+
+/* SM screen */
+@media screen and (max-width: 768px) and (min-width: 576px) {
+}
+
+/* MD screen */
+@media screen and (max-width: 992px) and (min-width: 768px) {
+}
+
+/* LG screen */
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+}
+
+/* XL screen and above  */
+@media screen and (min-width: 1200px) {
 }
