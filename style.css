@@ -68,7 +68,7 @@ h2 {
 }
 
 .btn-primary:hover {
-  background-color: var(--primary-cream);
+  background-color: transparent;
   border: 3px solid var(--green-dark);
   color: var(--green-dark);
 }
@@ -82,7 +82,7 @@ h2 {
 }
 
 .btn-primary:active {
-  background-color: var(--primary-cream);
+  background-color: transparent;
   border: 3px solid var(--green-dark);
   color: var(--green-dark);
 }
@@ -139,10 +139,10 @@ header {
   top: 0;
   background-color: var(--primary-cream);
   z-index: 2;
-  height: 100px;
 }
 
 .navbar {
+  height: 100px;
   display: flex;
   align-items: center;
 }
@@ -157,6 +157,10 @@ header {
   font-weight: 700 !important;
   font-size: 48px;
   color: var(--green-dark);
+}
+
+.cta-btn-2 {
+  display: none;
 }
 
 /***************************************************/
@@ -570,8 +574,11 @@ header {
 }
 
 .footer-image {
-  vertical-align: bottom;
-  padding-bottom: 9px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  width: 30%;
 }
 
 /***************************************************/
@@ -623,7 +630,7 @@ hr {
   }
 
   /* Header *******************************/
-  header {
+  .navbar {
     height: 80px;
   }
 
@@ -631,12 +638,392 @@ hr {
     font-size: 24px;
   }
 
+  .cta-btn-1 {
+    display: none;
+  }
+
+  .cta-btn-2 {
+    display: contents;
+  }
+
   /* Hero *******************************/
   .hero-container {
     background-image: url("images/Prishal_Makwana.png");
-    background-size: 100% auto;
+    background-size: 80% auto;
     background-repeat: no-repeat;
-    background-position: 80% bottom;
+    background-position: center bottom;
+    height: 500px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .hero-text {
+    padding: 0;
+  }
+
+  .hero-h1 {
+    font-size: 40px;
+  }
+
+  .hero-p {
+    font-size: 20px;
+    margin: 0;
+    background-color: var(--primary-cream);
+  }
+
+  .sm-social-container {
+    justify-content: flex-end;
+    display: flex;
+    width: 100%;
+  }
+
+  .social-container {
+    height: 135px;
+    width: 45px;
+    margin-top: 0px;
+  }
+
+  .social-btn {
+    width: 45px;
+    height: 45px;
+  }
+
+  .social-btn i {
+    font-size: 25px;
+  }
+
+  .hero-cta-1 {
+    display: none !important;
+  }
+
+  .hero-cta-2 {
+    display: flex;
+  }
+
+  .sm-cta-container {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 90px;
+  }
+
+  .gradient {
+    height: 100px;
+    width: 100%;
+    position: relative;
+    bottom: 100px;
+  }
+
+  /* Tech skills *******************************/
+  .tech-skills-container {
+    padding-bottom: 50px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .skills-title {
+    display: none;
+  }
+
+  .sm-skills-title {
+    font-size: 32px;
+    padding-top: 35px;
+    padding-bottom: 25px;
+  }
+
+  .card-body {
+    padding: 0 !important;
+  }
+
+  .skills-container {
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .sm-skills-title-container {
+    width: 100%;
+    display: flex;
+    padding-left: 12px;
+  }
+
+  .skill-item {
+    width: 40px;
+  }
+
+  .skill-text {
+    font-size: 10px;
+  }
+
+  .skills-btn-container {
+    display: none;
+  }
+
+  .sm-skills-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 12px;
+    padding-bottom: 35px;
+  }
+
+  /* Experience *******************************/
+  .experience-title,
+  .education-title,
+  .principle-title {
+    padding-top: 35px;
+    font-size: 32px;
+    padding-bottom: 25px;
+  }
+
+  .experience-container {
+    display: none;
+  }
+
+  .sm-experience-container {
+    display: grid;
+  }
+
+  .company-col {
+    justify-content: flex-start;
+    text-align: end;
+    padding-left: 0;
+  }
+
+  .company-logo-container {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    height: 75px;
+    width: 190px;
+    position: relative;
+    left: -8%;
+  }
+
+  .company-logo {
+    width: 130px;
+  }
+
+  .company-name {
+    font-size: 20px;
+  }
+
+  .company-period {
+    margin-bottom: 0;
+  }
+
+  .company-period,
+  .company-length {
+    font-size: 16px;
+  }
+
+  .job-title {
+    font-size: 20px;
+  }
+
+  .job-detail-1 {
+    font-size: 16px;
+    padding-left: 0;
+  }
+
+  .sm-experience-Btn {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 30px;
+  }
+
+  .sm-experience-Btn a {
+    color: var(--primary-cream);
+  }
+
+  /* Education *******************************/
+  .education-container {
+    display: none;
+  }
+
+  .sm-education-container {
+    display: grid;
+  }
+
+  .school-col {
+    justify-content: flex-start;
+    text-align: end;
+    padding-left: 0;
+  }
+
+  .school-logo-container {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    height: 75px;
+    width: 190px;
+    position: relative;
+    left: -8%;
+    margin-bottom: 0px;
+  }
+
+  .school-logo {
+    height: 50px;
+  }
+
+  .school-title {
+    font-size: 20px;
+    padding-top: 15px;
+  }
+
+  .school-date {
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+
+  .school-description {
+    font-size: 16px;
+    padding-top: 10px;
+  }
+
+  .school-date,
+  .school-description {
+    text-align: left;
+    padding-left: 0;
+  }
+
+  .sm-education-Btn {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 30px;
+  }
+
+  .sm-education-Btn a {
+    color: var(--green-darkest);
+  }
+
+  /* Principles *******************************/
+  .principle-container {
+    justify-content: center;
+  }
+
+  .principle {
+    padding: 40px;
+    min-width: 280px;
+    height: 140px;
+    margin: 10px;
+    box-shadow: 0px 5px 10px 2px rgba(85, 81, 55, 0.25);
+  }
+
+  .principle-icon {
+    font-size: 2rem;
+  }
+
+  .principle-text {
+    font-size: 20px;
+  }
+
+  /* Footer CTA *******************************/
+  .footer-cta-container {
+    height: 450px;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 75px;
+    bottom: 230px;
+  }
+
+  .footer-cta-content {
+    padding-left: 0;
+    margin-bottom: 40%;
+  }
+
+  .footer-cta-content a {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-title {
+    padding-top: 50px;
+    padding-bottom: 5px;
+    font-size: 20px;
+  }
+
+  .footer-text {
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 18px;
+  }
+
+  .sm-footer-cta-Btn {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+
+  .footer-image-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-image {
+    width: 55%;
+  }
+
+  /* Footer copyright *******************************/
+  .copyright {
+    flex-direction: column;
+  }
+
+  .copyright-1 {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .copyright-2 {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+/* SM screen */
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  /* Generic *******************************/
+  .btn-primary,
+  .btn-primary:link,
+  .btn-primary:visited {
+    height: 50px;
+    width: 175px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .btn-outline-primary,
+  .btn-outline-primary:link,
+  .btn-outline-primary:visited {
+    height: 50px;
+    width: 137px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  /* Header *******************************/
+  .navbar {
+    height: 80px;
+  }
+
+  .navbar-brand {
+    font-size: 24px;
+  }
+
+  .cta-btn-1 {
+    display: none;
+  }
+
+  .cta-btn-2 {
+    display: contents;
+  }
+
+  /* Hero *******************************/
+  .hero-container {
+    background-image: url("images/Prishal_Makwana.png");
+    background-size: 50% auto;
+    background-repeat: no-repeat;
+    background-position: 25% bottom;
     height: 500px;
     padding-left: 0;
     padding-right: 0;
@@ -770,7 +1157,7 @@ hr {
   }
 
   .company-col {
-    justify-content: flex-start;
+    justify-content: stretch;
     text-align: end;
     padding-left: 0;
   }
@@ -781,7 +1168,7 @@ hr {
     height: 75px;
     width: 190px;
     position: relative;
-    left: -10px;
+    left: -8%;
   }
 
   .company-logo {
@@ -841,7 +1228,7 @@ hr {
     height: 75px;
     width: 190px;
     position: relative;
-    left: -10px;
+    left: -8%;
     margin-bottom: 0px;
   }
 
@@ -881,6 +1268,10 @@ hr {
   }
 
   /* Principles *******************************/
+  .principle-container {
+    justify-content: center;
+  }
+
   .principle {
     padding: 40px;
     min-width: 280px;
@@ -908,6 +1299,7 @@ hr {
 
   .footer-cta-content {
     padding-left: 0;
+    margin-bottom: 25%;
   }
 
   .footer-cta-content a {
@@ -918,27 +1310,20 @@ hr {
   .footer-title {
     padding-top: 50px;
     padding-bottom: 5px;
-    font-size: 20px;
+    font-size: 32px;
   }
 
   .footer-text {
     padding-bottom: 10px;
     padding-left: 40px;
     padding-right: 40px;
-    font-size: 18px;
+    font-size: 24px;
   }
 
   .sm-footer-cta-Btn {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-  }
-
-  .footer-image {
-    padding-bottom: 0;
-    width: 80%;
-    position: relative;
-    bottom: -5px;
   }
 
   /* Footer copyright *******************************/
@@ -957,18 +1342,46 @@ hr {
   }
 }
 
-/* SM screen */
-@media screen and (max-width: 768px) and (min-width: 576px) {
-}
-
 /* MD screen */
 @media screen and (max-width: 992px) and (min-width: 768px) {
+  .hero-container {
+    background-size: auto 90%;
+    background-position: right bottom;
+  }
+
+  .hero-h1 {
+    background-color: var(--primary-cream);
+  }
+
+  .hero-p {
+    background-color: var(--primary-cream);
+  }
+
+  .skill-item {
+    width: 80px;
+  }
+
+  .principle-container {
+    justify-content: center;
+  }
+
+  .footer-cta-container {
+    height: 450px;
+    bottom: 225px;
+  }
 }
 
 /* LG screen */
 @media screen and (max-width: 1200px) and (min-width: 992px) {
+  .principle-container {
+    justify-content: center;
+  }
 }
 
-/* XL screen and above  */
-@media screen and (min-width: 1200px) {
+/* XL screen */
+@media screen and (max-width: 1400px) and (min-width: 1200px) {
+}
+
+/* above XL  */
+@media screen and (min-width: 1400px) {
 }
