@@ -94,7 +94,7 @@ h2 {
   border: 3px solid var(--green-dark);
   border-radius: 50px;
   height: 60px;
-  width: 170px;
+  width: 180px;
   font-weight: 600;
   font-size: 20px;
   color: var(--green-dark);
@@ -391,6 +391,7 @@ header {
   background-color: var(--cream-green-A);
   display: flex;
   margin: auto;
+  color: var(--cream-green-A);
 }
 
 .line {
@@ -1384,4 +1385,10 @@ hr {
 
 /* above XL  */
 @media screen and (min-width: 1400px) {
+}
+
+/* Final */
+
+.hide {
+  display: none;
 }
