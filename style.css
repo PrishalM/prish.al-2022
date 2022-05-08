@@ -472,6 +472,10 @@ header {
   margin-top: 0;
 }
 
+.last-school-description {
+  padding-bottom: 50px;
+}
+
 .education-line-tip {
   height: 300%;
   width: 10px;
