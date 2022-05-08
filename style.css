@@ -515,7 +515,8 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-bottom: 275px;
+
+  padding-bottom: 190px;
 }
 
 .principle {
@@ -546,6 +547,7 @@ header {
 
 .footer-cta-section {
   background-color: var(--green-darkest);
+
   height: 300px;
 }
 
@@ -558,7 +560,8 @@ header {
   align-items: center;
   height: 400px;
   position: relative;
-  bottom: 150px;
+
+  bottom: 134px;
 }
 
 .footer-cta-content {
@@ -900,6 +903,7 @@ hr {
   /* Principles *******************************/
   .principle-container {
     justify-content: center;
+    padding-bottom: 150px;
   }
 
   .principle {
@@ -919,12 +923,16 @@ hr {
   }
 
   /* Footer CTA *******************************/
+  .footer-cta-section {
+    height: 410px;
+  }
+
   .footer-cta-container {
-    height: 450px;
+    height: 492px;
     flex-direction: column;
     text-align: center;
     border-radius: 75px;
-    bottom: 230px;
+    bottom: 120px;
   }
 
   .footer-cta-content {
@@ -940,14 +948,14 @@ hr {
   .footer-title {
     padding-top: 50px;
     padding-bottom: 5px;
-    font-size: 20px;
+    font-size: 32px;
   }
 
   .footer-text {
     padding-bottom: 10px;
     padding-left: 40px;
     padding-right: 40px;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .sm-footer-cta-Btn {
@@ -967,7 +975,11 @@ hr {
 
   /* Footer copyright *******************************/
   .copyright {
+    display: flex;
+    justify-content: space-between;
     flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
 
   .copyright-1 {
@@ -1271,6 +1283,7 @@ hr {
   /* Principles *******************************/
   .principle-container {
     justify-content: center;
+    padding-bottom: 150px;
   }
 
   .principle {
@@ -1290,12 +1303,16 @@ hr {
   }
 
   /* Footer CTA *******************************/
+  .footer-cta-section {
+    height: 400px;
+  }
+
   .footer-cta-container {
     height: 450px;
     flex-direction: column;
     text-align: center;
     border-radius: 75px;
-    bottom: 230px;
+    bottom: 90px;
   }
 
   .footer-cta-content {
@@ -1328,8 +1345,13 @@ hr {
   }
 
   /* Footer copyright *******************************/
+
   .copyright {
+    display: flex;
+    justify-content: space-between;
     flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
 
   .copyright-1 {
@@ -1366,9 +1388,14 @@ hr {
     justify-content: center;
   }
 
+  .footer-cta-section {
+    height: 346px;
+  }
+
   .footer-cta-container {
     height: 450px;
-    bottom: 30px;
+
+    bottom: 139px;
   }
 }
 
