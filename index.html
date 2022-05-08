@@ -105,7 +105,9 @@
           <a class="navbar-brand" href="#">Prish.al</a>
           <div class="text-end cta-btn">
             <a href="#" class="btn btn-primary">
-              <span class='cta-btn-1'>Get in touch today</span><span class='cta-btn-2'>Get in touch</span>  <i class="ps-3 bi bi-chat-text-fill"></i>
+              <span class='cta-btn-1'>Get in touch today</span>
+              <span class='cta-btn-2'>Get in touch</span>  
+              <i class="ps-3 bi bi-chat-text-fill"></i>
             </a>
           </div>
         </div>
@@ -128,9 +130,13 @@
           </div>
          <div class="sm-social-container">
            <div class="social-container">
-            <div class="social-btn"><i class="bi bi-github"></i></div>
-            <div class="social-btn"><i class="bi bi-linkedin"></i></div>
-            <div class="social-btn"><i class="bi bi-instagram"></i></div>
+
+            <a href="https://github.com/prishalm" target="_blank" class="social-btn"><i class="bi bi-github"></i></a>
+
+            <a href="https://www.linkedin.com/in/prishal/" target="_blank" class="social-btn"><i class="bi bi-linkedin"></i></a>
+
+            <a href="https://instagram.com/prish.al" target="_blank" class="social-btn"><i class="bi bi-instagram"></i></a>
+
           </div>
         </div> 
         <div class="sm-cta-container">
@@ -286,7 +292,7 @@
           </div>
           <!-- skll end  -->
           <!-- Individual skills-->
-          <div class="skill-item">
+          <div class="skill-item hide">
             <img
               src="images/skills/mongodb.png"
               class="card-img-top"
@@ -306,7 +312,7 @@
           </div>
           <!-- skll end  -->
           <!-- Individual skills-->
-          <div class="skill-item">
+          <div class="skill-item hide">
             <img
               src="images/skills/testing_library.png"
               class="card-img-top"
@@ -354,7 +360,7 @@
           </div>
           <!-- skll end  -->
           <!-- Individual skills-->
-          <div class="skill-item" id="babel">
+          <div class="skill-item hide" id="babel">
             <img src="images/skills/babel.png" class="card-img-top" alt="..." />
             <div class="card-body">
               <p class="skill-text">Babel.js</p>
@@ -362,7 +368,7 @@
           </div>
           <!-- skll end  -->
           <!-- Individual skills-->
-          <div class="skill-item" id="webpack">
+          <div class="skill-item hide" id="webpack">
             <img
               src="images/skills/webpack.png"
               class="card-img-top"
@@ -374,7 +380,7 @@
           </div>
           <!-- skll end  -->
           <!-- Individual skills-->
-          <div class="skill-item" id="react-router">
+          <div class="skill-item hide" id="react-router">
             <img
               src="images/skills/react_router.png"
               class="card-img-top"
@@ -454,8 +460,8 @@
           <!-- View more/less button -->
           <div class="skills-Btn">
             <a class="btn btn-outline-primary" id="skill-mobile-btn">
-              View less
-              <i class="ps-3 bi bi-dash-circle-fill"></i>
+              <span class="view-more">View more</span>
+              <i class="ps-3 bi bi-plus-circle-fill"></i>
             </a>
           </div>
          </div>
@@ -465,8 +471,8 @@
        
         <div class="skills-Btn skills-btn-container">
           <a class="btn btn-outline-primary" id="skill-deskop-btn">
-            View less
-            <i class="ps-3 bi bi-dash-circle-fill"></i>
+            <span class="view-more">View more</span>
+            <i class="ps-3 bi bi-plus-circle-fill"></i>
           </a>
         </div>
       </div>
@@ -671,7 +677,7 @@
 
             <!-- View more/less button -->   
             <div class="sm-experience-Btn">
-              <a href="#" class="">
+              <a onClick="smJobDetail1()" class="" id="sm-job-detail-1" > 
                 View less<i class="ps-2 bi bi-dash-circle-fill"></i>
               </a>
             </div>
@@ -759,7 +765,7 @@
 
             <!-- View more/less button -->   
             <div class="sm-experience-Btn mb-5">
-              <a href="#" class="">
+              <a onClick="smJobDetail2()" id="sm-job-detail-2" class="">
                 View less<i class="ps-2 bi bi-dash-circle-fill"></i>
               </a>
             </div>

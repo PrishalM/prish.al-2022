@@ -546,7 +546,7 @@ header {
 
 .footer-cta-section {
   background-color: var(--green-darkest);
-  height: 250px;
+  height: 300px;
 }
 
 .footer-cta-container {
@@ -558,7 +558,7 @@ header {
   align-items: center;
   height: 400px;
   position: relative;
-  bottom: 200px;
+  bottom: 150px;
 }
 
 .footer-cta-content {
@@ -1368,7 +1368,7 @@ hr {
 
   .footer-cta-container {
     height: 450px;
-    bottom: 225px;
+    bottom: 30px;
   }
 }
 
