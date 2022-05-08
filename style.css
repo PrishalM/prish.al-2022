@@ -395,7 +395,7 @@ header {
 }
 
 .line {
-  height: 140%;
+  height: 200%;
   display: flex;
   width: 10px;
   background-color: var(--cream-green-A);
@@ -628,7 +628,7 @@ hr {
   .btn-outline-primary:link,
   .btn-outline-primary:visited {
     height: 50px;
-    width: 137px;
+    width: 160px;
     font-weight: 600;
     font-size: 16px;
   }
@@ -683,6 +683,7 @@ hr {
     justify-content: flex-end;
     display: flex;
     width: 100%;
+    margin-top: 29px;
   }
 
   .social-container {

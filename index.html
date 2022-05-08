@@ -662,7 +662,7 @@
               <h3 class="job-title">
                 Full Stack Development Engineer trainee
               </h3>
-              <ul class="job-detail-1 ps-3">
+              <ul id="view-futureproof" class="job-detail-1 ps-3 hide">
                 <li>
                   13-week bootcamp covering the main areas of web
                   development, including JavaScript, HTML/CSS, Databases,
@@ -677,8 +677,11 @@
 
             <!-- View more/less button -->   
             <div class="sm-experience-Btn">
-              <a onClick="smJobDetail1()" class="" id="sm-job-detail-1" > 
+              <a onClick="smJobDetailViewLessFutureproof()" class="hide" id="sm-job-detail-view-less-futureproof" > 
                 View less<i class="ps-2 bi bi-dash-circle-fill"></i>
+              </a>
+              <a onClick="smJobDetailViewMoreFutureproof()" class="" id="sm-job-detail-view-more-futureproof" > 
+                View more<i class="ps-2 bi bi-plus-circle-fill"></i>
               </a>
             </div>
 
@@ -716,10 +719,10 @@
             </div>
             <div class="col-10 ps-0">
               <h3 class="job-title">Marketing & UX Specalist</h3>
-              <p class="job-detail-1">
+              <p class="job-detail-1 hide " id="view-ichoosr-1">
                 Dec 2020 - Mar 2022 (1 year, 3 months)
               </p>
-              <p class="job-detail-2">
+              <p class="job-detail-2 hide" id="view-ichoosr-2">
                 My role consisted of campaign planning, overseeing the
                 customer journey and improving the UX/UI of our online
                 application in the UK.
@@ -728,7 +731,7 @@
           </div>
 
           <!-- role col -->
-          <div class="row pe-2">
+          <div class="row pe-2 hide" id="view-ichoosr-3">
             <div class="col-2">
               <div class="circle-small"></div>
               <div class="line"></div>
@@ -746,7 +749,7 @@
           </div>
 
           <!-- role col -->
-          <div class="row pe-2">
+          <div class="row pe-2 hide" id="view-ichoosr-4">
             <div class="col-2">
               <div class="circle-small"></div>
               <div class="line"></div>
@@ -763,15 +766,18 @@
               </p>
             </div>
 
-            <!-- View more/less button -->   
-            <div class="sm-experience-Btn mb-5">
-              <a onClick="smJobDetail2()" id="sm-job-detail-2" class="">
-                View less<i class="ps-2 bi bi-dash-circle-fill"></i>
-              </a>
-            </div>
+          
 
           </div>
-
+          <!-- View more/less button -->   
+          <div class="sm-experience-Btn mb-5">
+            <a onClick="smJobDetailViewLessiChoosr()" class="hide" id="sm-job-detail-view-less-ichoosr" > 
+              View less<i class="ps-2 bi bi-dash-circle-fill"></i>
+            </a>
+            <a onClick="smJobDetailViewMoreiChoosr()" class="" id="sm-job-detail-view-more-ichoosr" > 
+              View more<i class="ps-2 bi bi-plus-circle-fill"></i>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -832,7 +838,7 @@
             </div>
           </div>
 
-          <!-- school -->
+          <!-- school 2 - SU-->
           <div class="row">
             <!-- school logo col -->
             <div class="col-5 school-col">
@@ -992,7 +998,7 @@
             <div class="col-10"></div>
           </div>
 
-          <!-- school 1 -->
+          <!-- school 1 - UH -->
           <div class="row">
             <!-- line col -->
             <div class="col-2">
@@ -1009,17 +1015,20 @@
               </div>
               <div class="row pe-2">
                   <h3 class="school-title">University of Hertfordshire, uk</h3>
-                  <h4 class="school-date">
+                  <h4 class="school-date hide" id="view-uh-1">
                     Level 6 - BA First Class Honours - 2014 - 2018
                   </h4>
-                  <p class="school-description">
+                  <p class="school-description hide" id="view-uh-2">
                     Discipline: Marketing with a Year Abroad. 
                     Winner of a 2018 Deans Award and Go Herts Award
                   </p>
                   <!-- View more/less button -->   
                   <div class="sm-education-Btn">
-                    <a href="#" class="">
+                    <a onClick="smSchoolDetailViewLessUH()" class="hide" id="sm-school-detail-view-less-uh">
                       View less<i class="ps-2 bi bi-dash-circle-fill"></i>
+                    </a>
+                    <a onClick="smSchoolDetailViewMoreUH()" class="" id="sm-school-detail-view-more-uh">
+                      View more<i class="ps-2 bi bi-plus-circle-fill"></i>
                     </a>
                   </div>
 
@@ -1027,7 +1036,7 @@
             </div>
           </div>
 
-          <!-- school 2 -->
+          <!-- school 2 - SU -->
           <div class="row">
             <!-- line col -->
             <div class="col-2">
@@ -1044,24 +1053,27 @@
               </div>
               <div class="row pe-2">
                 <h3 class="school-title">Stockholm University, Sweden</h3>
-                <h4 class="school-date">
+                <h4 class="school-date hide" id="view-su-1">
                   Level 6 - 6.5 ETCS Credits - 2018 Summer School
                 </h4>
-                <p class="school-description">
+                <p class="school-description hide" id="view-su-2">
                   Modules studied: International Commercial Arbitration &
                   Current Topics in Advertising & PR
                 </p>
                 <!-- View more/less button -->   
                 <div class="sm-education-Btn">
-                  <a href="#" class="">
+                  <a onClick="smSchoolDetailViewLessSU()" class="hide" id="sm-school-detail-view-less-su">
                     View less<i class="ps-2 bi bi-dash-circle-fill"></i>
+                  </a>
+                  <a onClick="smSchoolDetailViewMoreSU()" class="" id="sm-school-detail-view-more-su">
+                    View more<i class="ps-2 bi bi-plus-circle-fill"></i>
                   </a>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- school 3 -->
+          <!-- school 3 - WSU -->
           <div class="row">
             <!-- line col -->
             <div class="col-2">
@@ -1077,27 +1089,31 @@
                 />
               </div>
               <div class="row pe-2">
-                  <h3 class="school-title">
-                    Western Sydney University, Australia
-                  </h3>
-                  <h4 class="school-date">
-                    Levels 4 - 6 - Year-long exchange - 2016 - 2017
-                  </h4>
-                  <p class="school-description">
-                    Modules studied: Marketing, Personal and Corporate
-                    Investment Management, Statistics and Chemistry
-                  </p>
-                  <!-- View more/less button -->   
-                  <div class="sm-education-Btn">
-                    <a href="#" class="">
-                      View less<i class="ps-2 bi bi-dash-circle-fill"></i>
-                    </a>
-                  </div>
+                <h3 class="school-title">
+                  Western Sydney University, Australia
+                </h3>
+                <h4 class="school-date hide" id="view-wsu-1">
+                  Levels 4 - 6 - Year-long exchange - 2016 - 2017
+                </h4>
+                <p class="school-description hide" id="view-wsu-2">
+                  Modules studied: Marketing, Personal and Corporate
+                  Investment Management, Statistics and Chemistry
+                </p>
+                
+                <!-- View more/less button -->   
+                <div class="sm-education-Btn">
+                  <a onClick="smSchoolDetailViewLessWSU()" class="hide" id="sm-school-detail-view-less-wsu">
+                    View less<i class="ps-2 bi bi-dash-circle-fill"></i>
+                  </a>
+                  <a onClick="smSchoolDetailViewMoreWSU()" class="" id="sm-school-detail-view-more-wsu">
+                    View more<i class="ps-2 bi bi-plus-circle-fill"></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- school 4 -->
+          <!-- school 4 ESSCA -->
           <div class="row">
             <!-- line col -->
             <div class="col-2">
@@ -1116,24 +1132,27 @@
                   <h3 class="school-title">
                     ESSCA School of Management, Hungary
                   </h3>
-                  <h4 class="school-date">
+                  <h4 class="school-date hide" id="view-essca-1">
                     Level 7 - 12 ETCS Credits - 2015 Summer School
                   </h4>
-                  <p class="school-description">
+                  <p class="school-description hide" id="view-essca-2">
                     Modules studied: International Marketing & Logistics and
                     Post-Modern Marketing
                   </p>
                   <!-- View more/less button -->   
                   <div class="sm-education-Btn">
-                    <a href="#" class="">
+                    <a onClick="smSchoolDetailViewLessESSCA()" class="hide" id="sm-school-detail-view-less-essca">
                       View less<i class="ps-2 bi bi-dash-circle-fill"></i>
+                    </a>
+                    <a onClick="smSchoolDetailViewMoreESSCA()" class="" id="sm-school-detail-view-more-essca">
+                      View more<i class="ps-2 bi bi-plus-circle-fill"></i>
                     </a>
                   </div>
                 </div>
               </div>
           </div>
 
-          <!-- school 5 -->
+          <!-- school 5 CANDI-->
           <div class="row">
             <!-- line col -->
             <div class="col-2">
@@ -1152,24 +1171,24 @@
                   <h3 class="school-title">
                     City and Islington Sixth Form College, UK
                   </h3>
-                  <h4 class="school-date">
+                  <h4 class="school-date hide" id="view-candi-1">
                     Level 3 - 300 UCAS Points (Pre-2017) - 2012 - 2014
                   </h4>
-                  <p class="school-description">
+                  <p class="school-description hide" id="view-candi-2">
                     Subjects: Chemistry (B), Computing (B) and Electronics (B)
                   </p>
                   <!-- View more/less button -->   
                   <div class="sm-education-Btn mb-5">
-                    <a href="#" class="">
+                    <a onClick="smSchoolDetailViewLessCANDI()" class="hide" id="sm-school-detail-view-less-candi">
                       View less<i class="ps-2 bi bi-dash-circle-fill"></i>
+                    </a>
+                    <a onClick="smSchoolDetailViewMoreCANDI()" class="" id="sm-school-detail-view-more-candi">
+                      View more<i class="ps-2 bi bi-plus-circle-fill"></i>
                     </a>
                   </div>
               </div>
             </div>
           </div>
-
-        </div>
-
       </div>
     </section>
 
