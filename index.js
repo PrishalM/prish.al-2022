@@ -194,3 +194,11 @@ function smSchoolDetailViewMoreCANDI() {
     .getElementById("sm-school-detail-view-more-candi")
     .classList.toggle("hide");
 }
+
+function checkScrollPosition() {
+  if (document.documentElement.scrollTop > 20) {
+    document.getElementById("header").classList.add("header-shadow");
+  } else {
+    document.getElementById("header").classList.remove("header-shadow");
+  }
+}

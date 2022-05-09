@@ -141,6 +141,10 @@ header {
   z-index: 2;
 }
 
+.header-shadow {
+  filter: drop-shadow(0px 1px 30px rgba(85, 81, 55, 0.25));
+}
+
 .navbar {
   height: 100px;
   display: flex;
@@ -929,7 +933,7 @@ hr {
 
   /* Footer CTA *******************************/
   .footer-cta-section {
-    height: 410px;
+    height: 415px;
   }
 
   .footer-cta-container {
@@ -1309,7 +1313,7 @@ hr {
 
   /* Footer CTA *******************************/
   .footer-cta-section {
-    height: 400px;
+    height: 415px;
   }
 
   .footer-cta-container {
@@ -1394,13 +1398,13 @@ hr {
   }
 
   .footer-cta-section {
-    height: 346px;
+    height: 350px;
   }
 
   .footer-cta-container {
     height: 450px;
 
-    bottom: 139px;
+    bottom: 140px;
   }
 }
 
