@@ -1,5 +1,6 @@
 // Skills Button
 
+// desktop
 document
   .getElementById("skills-view-more-deskop-btn")
   .addEventListener("click", () => {
@@ -32,6 +33,7 @@ document
       .classList.add("hide");
   });
 
+// Mobile
 document
   .getElementById("skills-view-more-mobile-btn")
   .addEventListener("click", () => {
@@ -64,43 +66,7 @@ document
       .classList.add("hide");
   });
 
-let skillDesktopButton = document.getElementById("skill-deskop-btn");
-let skillMobileButton = document.getElementById("skill-mobile-btn");
-skillDesktopButton.addEventListener("click", skillsButton);
-skillMobileButton.addEventListener("click", skillsButton);
-
-function skillsButton() {
-  document.getElementById("babel").classList.toggle("hide");
-  document.getElementById("webpack").classList.toggle("hide");
-  document.getElementById("react-router").classList.toggle("hide");
-
-  let viewMoreContent = `<span class="view-more">View more</span>
-  <i class="ps-3 bi bi-plus-circle-fill"></i>`;
-
-  let viewLessContent = `<span class="view-less">View less</span>
-  <i class="ps-3 bi bi-dash-circle-fill"></i>`;
-
-  if (
-    skillDesktopButton.innerHTML &&
-    skillMobileButton.innerHTML === viewLessContent
-  ) {
-    console.log("Works One");
-    skillDesktopButton.innerHTML = viewMoreContent;
-    skillMobileButton.innerHTML = viewMoreContent;
-  }
-
-  if (
-    skillDesktopButton.innerHTML &&
-    skillMobileButton.innerHTML === viewMoreContent
-  ) {
-    console.log("Works Two");
-    skillDesktopButton.innerHTML = viewLessContent;
-    skillMobileButton.innerHTML = viewLessContent;
-  }
-}
-
 // Job detail 1 - futureproof
-
 function smJobDetailViewLessFutureproof() {
   document.getElementById("view-futureproof").classList.toggle("hide");
   document
@@ -192,6 +158,7 @@ function smSchoolDetailViewMoreSU() {
     .getElementById("sm-school-detail-view-more-su")
     .classList.toggle("hide");
 }
+
 // School detail 3 - WSU
 function smSchoolDetailViewLessWSU() {
   document.getElementById("view-wsu-1").classList.toggle("hide");
@@ -214,6 +181,7 @@ function smSchoolDetailViewMoreWSU() {
     .getElementById("sm-school-detail-view-more-wsu")
     .classList.toggle("hide");
 }
+
 // School detail 4 - ESSCA
 function smSchoolDetailViewLessESSCA() {
   document.getElementById("view-essca-1").classList.toggle("hide");
