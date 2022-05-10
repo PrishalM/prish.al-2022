@@ -1,4 +1,69 @@
 // Skills Button
+
+document
+  .getElementById("skills-view-more-deskop-btn")
+  .addEventListener("click", () => {
+    document.getElementById("babel").classList.remove("hide");
+    document.getElementById("webpack").classList.remove("hide");
+    document.getElementById("react-router").classList.remove("hide");
+    document.getElementById("bcrypt").classList.remove("hide");
+
+    document
+      .getElementById("skills-view-more-deskop-btn")
+      .classList.add("hide");
+    document
+      .getElementById("skills-view-less-deskop-btn")
+      .classList.remove("hide");
+  });
+
+document
+  .getElementById("skills-view-less-deskop-btn")
+  .addEventListener("click", () => {
+    document.getElementById("babel").classList.add("hide");
+    document.getElementById("webpack").classList.add("hide");
+    document.getElementById("react-router").classList.add("hide");
+    document.getElementById("bcrypt").classList.add("hide");
+
+    document
+      .getElementById("skills-view-more-deskop-btn")
+      .classList.remove("hide");
+    document
+      .getElementById("skills-view-less-deskop-btn")
+      .classList.add("hide");
+  });
+
+document
+  .getElementById("skills-view-more-mobile-btn")
+  .addEventListener("click", () => {
+    document.getElementById("babel").classList.remove("hide");
+    document.getElementById("webpack").classList.remove("hide");
+    document.getElementById("react-router").classList.remove("hide");
+    document.getElementById("bcrypt").classList.remove("hide");
+
+    document
+      .getElementById("skills-view-more-mobile-btn")
+      .classList.add("hide");
+    document
+      .getElementById("skills-view-less-mobile-btn")
+      .classList.remove("hide");
+  });
+
+document
+  .getElementById("skills-view-less-mobile-btn")
+  .addEventListener("click", () => {
+    document.getElementById("babel").classList.add("hide");
+    document.getElementById("webpack").classList.add("hide");
+    document.getElementById("react-router").classList.add("hide");
+    document.getElementById("bcrypt").classList.add("hide");
+
+    document
+      .getElementById("skills-view-more-mobile-btn")
+      .classList.remove("hide");
+    document
+      .getElementById("skills-view-less-mobile-btn")
+      .classList.add("hide");
+  });
+
 let skillDesktopButton = document.getElementById("skill-deskop-btn");
 let skillMobileButton = document.getElementById("skill-mobile-btn");
 skillDesktopButton.addEventListener("click", skillsButton);
