@@ -8,6 +8,7 @@ document
     document.getElementById("webpack").classList.remove("hide");
     document.getElementById("react-router").classList.remove("hide");
     document.getElementById("bcrypt").classList.remove("hide");
+    document.getElementById("json-web-token").classList.remove("hide");
 
     document
       .getElementById("skills-view-more-deskop-btn")
@@ -24,6 +25,7 @@ document
     document.getElementById("webpack").classList.add("hide");
     document.getElementById("react-router").classList.add("hide");
     document.getElementById("bcrypt").classList.add("hide");
+    document.getElementById("json-web-token").classList.add("hide");
 
     document
       .getElementById("skills-view-more-deskop-btn")
