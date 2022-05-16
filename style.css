@@ -14,6 +14,7 @@
   --primary-cream: #fff0e5;
   --cream-green-A: #ecded2;
   --green-cream-A: #68634a;
+  --green-cream-D: #a19884;
 }
 
 .dark-green-text {
@@ -165,6 +166,96 @@ header {
 
 .cta-btn-2 {
   display: none;
+}
+
+/***************************************************/
+/* Contact form */
+.contact-form-bkg {
+  height: 100%;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  background: linear-gradient(
+    180deg,
+    var(--primary-green) 0%,
+    var(--green-darkest) 100%
+  );
+}
+
+.contact-form-section {
+}
+
+.contact-form-container {
+  background-color: var(--cream-green-A);
+  color: var(--green-darkest);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 645px;
+  position: relative;
+}
+
+.contact-form-image {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  width: 30%;
+}
+
+.contact-form-col-B {
+  background-color: var(--primary-cream);
+  height: 100%;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.contact-form-copy,
+.contact-form-input {
+  padding: 30px;
+}
+
+.contact-form-input {
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.contact-form-input-title {
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.contact-form-input-text {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+input,
+textarea {
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid var(--green-cream-D);
+}
+
+input {
+  height: 60px;
+}
+
+textarea {
+  height: 120px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.contact-form-input-button {
+  display: flex;
+  flex-direction: ßrow-reverse;
 }
 
 /***************************************************/
@@ -568,7 +659,6 @@ header {
   align-items: center;
   height: 400px;
   position: relative;
-
   bottom: 134px;
 }
 
@@ -661,7 +751,7 @@ hr {
   /* Hero *******************************/
   .hero-container {
     background-image: url("images/Prishal_Makwana.png");
-    background-size: 80% auto;
+    background-size: 60% auto;
     background-repeat: no-repeat;
     background-position: center bottom;
     height: 500px;
