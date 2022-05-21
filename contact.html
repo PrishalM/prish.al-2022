@@ -62,7 +62,9 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"
       defer
     ></script>
-    <script src="index.js" defer></script>
+    <script src="contact.js" defer></script>
+    <script src="https://smtpjs.com/v3/smtp.js" defer>
+    </script>
 
     <!--CSS-->
     <link rel="stylesheet" href="style.css" />
@@ -102,7 +104,7 @@
     <header id="header"> 
       <nav class="navbar">
         <div class="container-xl">
-          <a class="navbar-brand" href="#">Prish.al</a>
+          <a class="navbar-brand" href="/">Prish.al</a>
           <div class="text-end cta-btn">
             <a href="index.html" class="btn btn-outline-primary">
               <span class='close-btn'>Close</span>
@@ -122,26 +124,27 @@
 
           <div class="col-sm-6 contact-form-col-A">
             <div class="contact-form-copy">
-                <h2 class="footer-title">Let’s make something <br>amazing together! </h2>
-                <h3 class="footer-text">You know about me, <br>let’s talk about you</h3>
+                <h2 class="contact-form-title">Let’s make something <br>amazing together! </h2>
+                <h3 class="contact-form-text">You know about me, <br>let’s talk about you</h3>
                 <img class="contact-form-image" src="images/Prishal_Makwana_Hi.png" alt="Image of Prishal waving">
             </div>
           </div>
+
 
           <div class="col-sm-6 contact-form-col-B">
             <form action="" class="contact-form-input">
                 <h2 class="contact-form-input-title">Leave me a message</h2>
                 <p class="contact-form-input-text">* mandatory</p>
-                <label for="name">Name</label><br>
-                <input type="text" id="name" name="name"><br>
-                <label for="email">Email*</label><br>
-                <input type="email" id="email" name="email"><br>
-                <label for="message">Message*</label><br>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Message*</label>
                 <textarea id="message" name="message" rows="2" ></textarea>
                 
                 <div class="contact-form-input-button">
-                    <a href="#"  class="btn btn-primary mt-4 sm-footer-cta-Btn">
-                        <span class='cta-btn-1'>Send message</span> 
+                    <a href="#" id="send-button" class="btn btn-primary mt-4 sm-contact-form-send-Btn">
+                        <span class='send-btn'>Send message</span> 
                         <i class="ps-3 bi bi-send-fill"></i>
                     </a>
                 </div>
@@ -159,7 +162,7 @@
         <div class="copyright">
           <span class="copyright-1">Prish.al ©2022. All rights reserved.</span>
           <span class="copyright-2"
-            >Designed and created by <a href="https:prish.al">Prishal</a></span
+            >Designed and created by&nbsp;<a href="https:prish.al">Prishal</a></span
           >
         </div>
       </div>

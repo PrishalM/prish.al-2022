@@ -230,10 +230,13 @@ function smSchoolDetailViewMoreCANDI() {
     .classList.toggle("hide");
 }
 
+//Navbar shadow
 function checkScrollPosition() {
-  if (document.documentElement.scrollTop > 20) {
+  if (document.documentElement.scrollTop > 0) {
     document.getElementById("header").classList.add("header-shadow");
   } else {
     document.getElementById("header").classList.remove("header-shadow");
   }
 }
+
+// Contact form
