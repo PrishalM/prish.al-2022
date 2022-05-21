@@ -132,7 +132,7 @@
 
 
           <div class="col-sm-6 contact-form-col-B">
-            <form action="" class="contact-form-input">
+            <form action="contact.php" method="post" name="contact_form" class="contact-form-input">
                 <h2 class="contact-form-input-title">Leave me a message</h2>
                 <p class="contact-form-input-text">* mandatory</p>
                 <label for="name">Name</label>
@@ -143,10 +143,10 @@
                 <textarea id="message" name="message" rows="2" ></textarea>
                 
                 <div class="contact-form-input-button">
-                    <a href="#" id="send-button" class="btn btn-primary mt-4 sm-contact-form-send-Btn">
+                    <button type="submit" id="send-button" class="btn btn-primary mt-4 sm-contact-form-send-Btn">
                         <span class='send-btn'>Send message</span> 
                         <i class="ps-3 bi bi-send-fill"></i>
-                    </a>
+                    </button>
                 </div>
             </form>
          </div>
