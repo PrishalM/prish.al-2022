@@ -1,42 +1,54 @@
 <?php
 
-$EmailFrom = $_REQUEST['email']; 
-$EmailTo = "contact@prish.al"; 
-$Subject = "Contact form from Prish.al";
-$Name = Trim(stripslashes($_POST['name'])); 
-$Email = Trim(stripslashes($_POST['email'])); 
-$Message = Trim(stripslashes($_POST['message'])); 
 
-// validation
-$validationOK=true;
-if (!$validationOK) {
-  echo "Error";
-  exit;
+$errors = '';
+$myemail = 'contact@prish.al';
+
+if(empty($_POST['name'])  || 
+   empty($_POST['email']) || 
+   empty($_POST['message']))
+{
+    $errors .= "\n Error: all fields are required";
 }
 
-// prepare email body text
-$Body = "";
-$Body .= "Name: ";
-$Body .= $Name;
-$Body .= "\n";
-$Body .= "Email: ";
-$Body .= $Email;
-$Body .= "\n";
-$Body .= "Message: ";
-$Body .= "\n";
-$Body .= "\n";
-$Body .= $Message;
-$Body .= "\n";
+$name = $_POST['name']; 
+$email_address = $_POST['email']; 
+$message = $_POST['message']; 
 
-// send email 
-$success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
-
-// redirect to success page 
-if ($success){
-  echo "Success";
+if (!preg_match(
+"/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", 
+$email_address))
+{
+    $errors .= "\n Error: Invalid email address";
 }
-else{
-  echo "Error";
+
+
+
+
+
+if( empty($errors))
+
+{
+
+$to = $myemail;
+
+$email_subject = "Contact form submission: $name";
+
+$email_body = "You have received a new message. ".
+
+" Here are the details:\n Name: $name \n ".
+
+"Email: $email_address\n Message \n $message";
+
+$headers = "From: $myemail\n";
+
+$headers .= "Reply-To: $email_address";
+
+mail($to,$email_subject,$email_body,$headers);
+
+//redirect to the 'thank you' page
+
+header('Location: message-sent.html');
 }
 ?>
 
