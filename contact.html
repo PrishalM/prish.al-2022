@@ -107,7 +107,7 @@
           <a class="navbar-brand" href="/">Prish.al</a>
           <div class="text-end cta-btn">
             <a href="index.html" class="btn btn-outline-primary">
-              <span class='close-btn'>Close</span>
+             Close
               <i class="ps-3 bi bi-x-circle-fill"></i>
             </a>
           </div>
@@ -138,9 +138,9 @@
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name">
                 <label for="email">Email*</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" required>
                 <label for="message">Message*</label>
-                <textarea id="message" name="message" rows="2" ></textarea>
+                <textarea id="message" name="message" rows="2" required></textarea>
                 
                 <div class="contact-form-input-button">
                     <button type="submit" id="send-button" class="btn btn-primary mt-4 sm-contact-form-send-Btn">
@@ -148,6 +148,7 @@
                         <i class="ps-3 bi bi-send-fill"></i>
                     </button>
                 </div>
+      
                 <input type="hidden" name="_next" value="https://prishal.netlify.app/message-sent.html">
             </form>
          </div>

@@ -7,7 +7,10 @@
     <meta name="”robots”" content="index, follow" />
     <link rel="icon" type="image/png" href="images/P.png" />
     <title>Contact - Prishal - Junior Full Stack Developer</title>
-    <meta property="og:title" content="Contact - Prishal - Junior Full Stack Developer" />
+    <meta
+      property="og:title"
+      content="Contact - Prishal - Junior Full Stack Developer"
+    />
     <meta
       property="og:site_name"
       content="Contact - Prishal - Junior Full Stack Developer"
@@ -63,8 +66,7 @@
       defer
     ></script>
     <script src="contact.js" defer></script>
-    <script src="https://smtpjs.com/v3/smtp.js" defer>
-    </script>
+    <script src="https://smtpjs.com/v3/smtp.js" defer></script>
 
     <!--CSS-->
     <link rel="stylesheet" href="style.css" />
@@ -99,15 +101,15 @@
     </script>
     <!-- End Google Tag Manager -->
   </head>
-  <body id ='body' class="" onscroll="checkScrollPosition()">
+  <body id="body" class="" onscroll="checkScrollPosition()">
     <!-- Navbar -->
-    <header id="header"> 
+    <header id="header">
       <nav class="navbar">
         <div class="container-xl">
           <a class="navbar-brand" href="/">Prish.al</a>
           <div class="text-end cta-btn">
             <a href="index.html" class="btn btn-outline-primary">
-              <span class='close-btn'>Close</span>
+              Close
               <i class="ps-3 bi bi-x-circle-fill"></i>
             </a>
           </div>
@@ -115,13 +117,31 @@
       </nav>
     </header>
 
-
-<!-- Contact Form -->
+    <!-- Contact Msg Sent Form -->
     <section class="contact-form-section contact-form-bkg">
       <div class="container-xl">
-
-        <h1>Message sent</h1>
-
+        <div class="contact-form-msg-sent-container">
+          <div class="contact-form-msg-sent">
+            <h2 class="contact-form-msg-sent-title">
+              Thank you for getting in touch!
+            </h2>
+            <h3 class="contact-form-msg-sent-text">
+              I aim to respond to you within 3 working days.
+            </h3>
+            <div class="text-end close-btn">
+              <a href="index.html" class="btn btn-outline-primary">
+                Close
+                <i class="ps-3 bi bi-x-circle-fill"></i>
+              </a>
+            </div>
+            <img
+              class="contact-form-msg-sent-image"
+              src="images/Prishal_Makwana_Thanks.png"
+              alt="Image of Prishal with their hands in a love shape"
+            />
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer copyright -->
@@ -131,11 +151,12 @@
         <div class="copyright">
           <span class="copyright-1">Prish.al ©2022. All rights reserved.</span>
           <span class="copyright-2"
-            >Designed and created by&nbsp;<a href="https:prish.al">Prishal</a></span
+            >Designed and created by&nbsp;<a href="https:prish.al"
+              >Prishal</a
+            ></span
           >
         </div>
       </div>
     </footer>
-
   </body>
 </html>
