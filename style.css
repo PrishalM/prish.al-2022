@@ -171,9 +171,9 @@ header {
 /***************************************************/
 /* Contact form */
 .contact-form-bkg {
-  height: 80vh;
+  height: 82vh;
   padding-top: 7vh;
-
+  padding-bottom: 7vh;
   background: linear-gradient(
     180deg,
     var(--primary-green) 0%,
@@ -768,6 +768,7 @@ label {
 .footer-section {
   background-color: var(--green-darkest);
   color: var(--primary-cream);
+  position: relative;
 }
 
 .footer-section a {
@@ -813,8 +814,8 @@ hr {
   /* Contact Form *******************************/
   .contact-form-bkg {
     height: 100%;
-    padding-top: 4vh;
-    padding-bottom: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 8vh;
   }
 
   .contact-form-container,
@@ -901,6 +902,7 @@ hr {
   .contact-form-msg-sent-image {
     width: 39%;
     left: 32%;
+    margin-bottom: -1%;
   }
 
   .close-btn {
@@ -1290,13 +1292,7 @@ hr {
   }
 
   /* Contact Form *******************************/
-  .contact-form-bkg {
-    height: 100%;
-    padding-top: 4vh;
-    padding-bottom: 5vh;
-  }
-
-  .contact-form-container,
+  ß .contact-form-container,
   .contact-form-msg-sent-container {
     flex-direction: column-reverse;
     height: 100%;
@@ -1748,9 +1744,7 @@ hr {
 @media screen and (max-width: 992px) and (min-width: 768px) {
   /* Contact Form *******************************/
   .contact-form-bkg {
-    height: 100%;
-    padding-top: 4vh;
-    padding-bottom: 5vh;
+    height: 82vh;
   }
 
   .contact-form-container,
