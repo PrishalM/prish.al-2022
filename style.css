@@ -133,6 +133,12 @@ h2 {
 }
 
 /***************************************************/
+/* Index */
+.index-body {
+  background-color: var(--green-darkest);
+}
+
+/***************************************************/
 /* Header */
 header {
   position: sticky;
@@ -170,6 +176,10 @@ header {
 
 /***************************************************/
 /* Contact form */
+
+.contact-body {
+  background-color: var(--green-darkest);
+}
 .contact-form-bkg {
   height: 100%;
   padding-top: 7vh;
@@ -345,6 +355,7 @@ label {
 /* Hero */
 .hero-section {
   height: 500px;
+  background-color: var(--primary-cream);
 }
 
 .hero-container {
