@@ -171,7 +171,7 @@ header {
 /***************************************************/
 /* Contact form */
 .contact-form-bkg {
-  height: 82vh;
+  height: 100%;
   padding-top: 7vh;
   padding-bottom: 7vh;
   background: linear-gradient(
@@ -293,7 +293,10 @@ label {
 }
 
 /***************************************************/
-/* Contact form msg Sent */
+/* Contact form msg sent */
+.msg-sent-body {
+  background-color: var(--green-darkest);
+}
 
 .contact-form-msg-sent-container {
   background-color: var(--cream-green-A);
@@ -813,7 +816,6 @@ hr {
 
   /* Contact Form *******************************/
   .contact-form-bkg {
-    height: 100%;
     padding-top: 5vh;
     padding-bottom: 8vh;
   }
@@ -1743,9 +1745,6 @@ hr {
 /* MD screen */
 @media screen and (max-width: 992px) and (min-width: 768px) {
   /* Contact Form *******************************/
-  .contact-form-bkg {
-    height: 82vh;
-  }
 
   .contact-form-container,
   .contact-form-msg-sent-container {
