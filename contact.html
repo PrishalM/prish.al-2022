@@ -132,7 +132,7 @@
 
 
           <div class="col-sm-6 contact-form-col-B">
-            <form action="contact.php" data-netlify="true" method="post" name="contact_form" class="contact-form-input">
+            <form  method="POST" name="contact_form" class="contact-form-input" action="https://formsubmit.co/contact@prish.al">
                 <h2 class="contact-form-input-title">Leave me a message</h2>
                 <p class="contact-form-input-text">* mandatory</p>
                 <label for="name">Name</label>
@@ -148,6 +148,7 @@
                         <i class="ps-3 bi bi-send-fill"></i>
                     </button>
                 </div>
+                <input type="hidden" name="_next" value="https://prishal.netlify.app/message-sent.html">
             </form>
          </div>
 
