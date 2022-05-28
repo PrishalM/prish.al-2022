@@ -4,11 +4,18 @@
 document
   .getElementById("skills-view-more-deskop-btn")
   .addEventListener("click", () => {
-    document.getElementById("babel").classList.remove("hide");
-    document.getElementById("webpack").classList.remove("hide");
-    document.getElementById("react-router").classList.remove("hide");
-    document.getElementById("bcrypt").classList.remove("hide");
+    document.getElementById("pytest").classList.remove("hide");
     document.getElementById("json-web-token").classList.remove("hide");
+    document.getElementById("bcrypt").classList.remove("hide");
+    document.getElementById("node").classList.remove("hide");
+    document.getElementById("express").classList.remove("hide");
+    document.getElementById("postgresql").classList.remove("hide");
+    document.getElementById("mongodb").classList.remove("hide");
+    document.getElementById("docker").classList.remove("hide");
+    document.getElementById("flask").classList.remove("hide");
+    document.getElementById("django").classList.remove("hide");
+    document.getElementById("jupyter").classList.remove("hide");
+    document.getElementById("pandas").classList.remove("hide");
 
     document
       .getElementById("skills-view-more-deskop-btn")
@@ -21,11 +28,18 @@ document
 document
   .getElementById("skills-view-less-deskop-btn")
   .addEventListener("click", () => {
-    document.getElementById("babel").classList.add("hide");
-    document.getElementById("webpack").classList.add("hide");
-    document.getElementById("react-router").classList.add("hide");
-    document.getElementById("bcrypt").classList.add("hide");
+    document.getElementById("pytest").classList.add("hide");
     document.getElementById("json-web-token").classList.add("hide");
+    document.getElementById("bcrypt").classList.add("hide");
+    document.getElementById("node").classList.add("hide");
+    document.getElementById("express").classList.add("hide");
+    document.getElementById("postgresql").classList.add("hide");
+    document.getElementById("mongodb").classList.add("hide");
+    document.getElementById("docker").classList.add("hide");
+    document.getElementById("flask").classList.add("hide");
+    document.getElementById("django").classList.add("hide");
+    document.getElementById("jupyter").classList.add("hide");
+    document.getElementById("pandas").classList.add("hide");
 
     document
       .getElementById("skills-view-more-deskop-btn")
@@ -39,10 +53,18 @@ document
 document
   .getElementById("skills-view-more-mobile-btn")
   .addEventListener("click", () => {
-    document.getElementById("babel").classList.remove("hide");
-    document.getElementById("webpack").classList.remove("hide");
-    document.getElementById("react-router").classList.remove("hide");
+    document.getElementById("pytest").classList.remove("hide");
+    document.getElementById("json-web-token").classList.remove("hide");
     document.getElementById("bcrypt").classList.remove("hide");
+    document.getElementById("node").classList.remove("hide");
+    document.getElementById("express").classList.remove("hide");
+    document.getElementById("postgresql").classList.remove("hide");
+    document.getElementById("mongodb").classList.remove("hide");
+    document.getElementById("docker").classList.remove("hide");
+    document.getElementById("flask").classList.remove("hide");
+    document.getElementById("django").classList.remove("hide");
+    document.getElementById("jupyter").classList.remove("hide");
+    document.getElementById("pandas").classList.remove("hide");
 
     document
       .getElementById("skills-view-more-mobile-btn")
@@ -55,10 +77,18 @@ document
 document
   .getElementById("skills-view-less-mobile-btn")
   .addEventListener("click", () => {
-    document.getElementById("babel").classList.add("hide");
-    document.getElementById("webpack").classList.add("hide");
-    document.getElementById("react-router").classList.add("hide");
+    document.getElementById("pytest").classList.add("hide");
+    document.getElementById("json-web-token").classList.add("hide");
     document.getElementById("bcrypt").classList.add("hide");
+    document.getElementById("node").classList.add("hide");
+    document.getElementById("express").classList.add("hide");
+    document.getElementById("postgresql").classList.add("hide");
+    document.getElementById("mongodb").classList.add("hide");
+    document.getElementById("docker").classList.add("hide");
+    document.getElementById("flask").classList.add("hide");
+    document.getElementById("django").classList.add("hide");
+    document.getElementById("jupyter").classList.add("hide");
+    document.getElementById("pandas").classList.add("hide");
 
     document
       .getElementById("skills-view-more-mobile-btn")
