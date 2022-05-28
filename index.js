@@ -16,6 +16,7 @@ document
     document.getElementById("django").classList.remove("hide");
     document.getElementById("jupyter").classList.remove("hide");
     document.getElementById("pandas").classList.remove("hide");
+    document.getElementById("sklearn").classList.remove("hide");
 
     document
       .getElementById("skills-view-more-deskop-btn")
@@ -40,6 +41,7 @@ document
     document.getElementById("django").classList.add("hide");
     document.getElementById("jupyter").classList.add("hide");
     document.getElementById("pandas").classList.add("hide");
+    document.getElementById("sklearn").classList.add("hide");
 
     document
       .getElementById("skills-view-more-deskop-btn")
@@ -65,6 +67,7 @@ document
     document.getElementById("django").classList.remove("hide");
     document.getElementById("jupyter").classList.remove("hide");
     document.getElementById("pandas").classList.remove("hide");
+    document.getElementById("sklearn").classList.remove("hide");
 
     document
       .getElementById("skills-view-more-mobile-btn")
@@ -89,6 +92,7 @@ document
     document.getElementById("django").classList.add("hide");
     document.getElementById("jupyter").classList.add("hide");
     document.getElementById("pandas").classList.add("hide");
+    document.getElementById("sklearn").classList.add("hide");
 
     document
       .getElementById("skills-view-more-mobile-btn")
