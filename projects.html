@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="”robots”" content="index, follow" />
-    <link rel="icon" type="image/png" href="images/prish.al_icon_primary.png" />
+    <link rel="icon" type="image/png" href="images/P.png" />
     <title>Prishal - Junior Full Stack Developer</title>
     <meta property="og:title" content="Prishal - Junior Full Stack Developer" />
     <meta
@@ -35,10 +35,10 @@
     <meta property="og:url" content="https://prish.al" />
     <meta property="og:image" content="https://prish.al/images/hero.jpg" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:label1" value="HTML | CSS | Bootstrap | JavaScript" />
+    <meta name="twitter:label1" value="HTML/CSS | Bootstrap | JavaScript/React" />
     <meta name="twitter:data1" value="Prishal Makwana - London - 26" />
 
-    <!-- Bootstrap 5.1 CSS -->
+    <!-- Bootstrap 5.1 cdn -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -46,8 +46,11 @@
       crossorigin="anonymous"
     />
 
-    <!--CSS-->
-    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap icons cdn   -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
 
     <!-- Font Awesome cdn -->
     <script
@@ -59,7 +62,10 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"
       defer
     ></script>
-    <script src="function.js" defer></script>
+    <script src="index.js" defer></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -91,5 +97,398 @@
     </script>
     <!-- End Google Tag Manager -->
   </head>
-  <body></body>
+  <body id ='body' class="index-body" onscroll="checkScrollPosition()">
+    <!-- Navbar -->
+    <header id="header"> 
+      <nav class="navbar">
+        <div class="container-xl">
+          <a class="navbar-brand" href="/">Prish.al</a>
+          <div class="text-end cta-btn">
+            <a href="contact.html" class="btn btn-primary">
+              <span class='cta-btn-1'>Get in touch today</span>
+              <span class='cta-btn-2'>Get in touch</span>  
+              <i class="ps-3 bi bi-chat-text-fill"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Project Hero section -->
+    <section class="project-hero-section">
+      <div class="container-xl project-hero-container">
+        <h2 class="projects-title">Projects</h2>
+        <p>View my latest projects project and explore them further by clicking the view more button </p>
+       
+      </div>
+     
+    </section>
+
+
+    <!-- Project cards section -->
+      <section class="project-cards-section"> 
+        <div class="container-xl project-cards-container">
+          <!-- Artfol.io -->
+          <div class="project card" >
+            <img
+              src="/images/projects/Artfol.io/Artfolio.png"
+              alt="Artfol.io icon"
+              class="project-image artfolio"
+            />
+
+            <div class="project-content">
+              <h3 class="project-title">
+              Artfol.io
+              </h3>
+              <div class="project-skills">
+                <img src="/images/skills/figma.png" alt="" class="project-skill" />
+                <img src="/images/skills/html.png" alt="" class="project-skill" />
+                <img src="/images/skills/css.png" alt="" class="project-skill" />
+                <img src="/images/skills/bootstrap.png" alt="" class="project-skill" />
+                <img src="/images/skills/javascript.png" alt="" class="project-skill" />
+                <img src="/images/skills/react.png" alt="" class="project-skill" />
+                <img src="/images/skills/redux.png" alt="" class="project-skill" />
+                <img src="/images/skills/mongodb.png" alt="" class="project-skill" />
+                
+                
+              </div>
+              <div class="project-description-container">
+                <p class="project-description" >
+                Artist Marketplace 
+                </p>
+                <div class="project-card-gradient"></div>
+              </div>
+            </div>
+            <div class="project-view-more-link"> 
+              <a href="" class="btn btn-primary project-view-more-button stretched-link">
+                View more<i class="ps-3 bi bi-plus-circle-fill"></i>
+              </a>
+                
+            </div>
+          </div>
+
+          <!-- Quizzical -->
+          <div class="project card" >
+            <img
+              src="/images/projects/Quizzical/Quizzical.png"
+              alt="Quizzical icon"
+              class="project-image quizzical"
+            />
+
+            <div class="project-content">
+
+              <h3 class="project-title">
+              Quizzical
+              </h3>
+              <div class="project-skills">
+                <img src="/images/skills/html.png" alt="" class="project-skill" />
+                <img src="/images/skills/css.png" alt="" class="project-skill" />
+                <img src="/images/skills/bootstrap.png" alt="" class="project-skill" />
+                <img src="/images/skills/javascript.png" alt="" class="project-skill" />
+                <img src="/images/skills/react.png" alt="" class="project-skill" />
+                <img src="/images/skills/redux.png" alt="" class="project-skill" />
+                
+              </div>
+              <div class="project-description-container">
+                <p class="project-description" >
+                Drinking based adult quiz game built using React.
+                </p>
+                <div class="project-card-gradient"></div>
+              </div>
+
+              </div>
+              <div class="project-view-more-link"> 
+                <a href="" class="btn btn-primary project-view-more-button stretched-link">
+                  View more<i class="ps-3 bi bi-plus-circle-fill"></i>
+                </a>
+                  
+              </div>
+          </div>
+
+          <!-- DIRAL -->
+          <div class="project card" >
+            <img
+              src="/images/projects/DIRAL/DIRAL.png"
+              alt="DIRAL icon"
+              class="project-image diral"
+            />
+
+            <div class="project-content">
+
+              <h3 class="project-title">
+              DIRAL
+              </h3>
+              <div class="project-skills">
+                <img src="/images/skills/html.png" alt="" class="project-skill" />
+                <img src="/images/skills/css.png" alt="" class="project-skill" />
+                <img src="/images/skills/bootstrap.png" alt="" class="project-skill" />
+                <img src="/images/skills/javascript.png" alt="" class="project-skill" />
+                
+              </div>
+              <div class="project-description-container">
+                <p class="project-description" >
+                Contemporary japanese cusine in London. This is a demo restaurant page 
+                </p>
+                <div class="project-card-gradient"></div>
+              </div>
+              </div>
+              <div class="project-view-more-link"> 
+                <a href="" class="btn btn-primary project-view-more-button stretched-link">
+                  View more<i class="ps-3 bi bi-plus-circle-fill"></i>
+                </a>
+                  
+              </div>
+          </div>
+
+          <!-- DIRAL -->
+          <div class="project card" >
+            <img
+              src="/images/projects/DIRAL/DIRAL.png"
+              alt="DIRAL icon"
+              class="project-image diral"
+            />
+
+            <div class="project-content">
+
+              <h3 class="project-title">
+              DIRAL
+              </h3>
+              <div class="project-skills">
+                <img src="/images/skills/html.png" alt="" class="project-skill" />
+                <img src="/images/skills/css.png" alt="" class="project-skill" />
+                <img src="/images/skills/bootstrap.png" alt="" class="project-skill" />
+                <img src="/images/skills/javascript.png" alt="" class="project-skill" />
+                
+              </div>
+              <div class="project-description-container">
+                <p class="project-description" >
+                Contemporary japanese cusine in London. This is a demo restaurant page 
+                </p>
+                <div class="project-card-gradient"></div>
+              </div>
+              </div>
+              <div class="project-view-more-link"> 
+                <a href="" class="btn btn-primary project-view-more-button stretched-link">
+                  View more<i class="ps-3 bi bi-plus-circle-fill"></i>
+                </a>
+                  
+              </div>
+          </div>
+
+          <!-- DIRAL -->
+          <div class="project card" >
+            <img
+              src="/images/projects/DIRAL/DIRAL.png"
+              alt="DIRAL icon"
+              class="project-image diral"
+            />
+
+            <div class="project-content">
+
+              <h3 class="project-title">
+              DIRAL
+              </h3>
+              <div class="project-skills">
+                <img src="/images/skills/html.png" alt="" class="project-skill" />
+                <img src="/images/skills/css.png" alt="" class="project-skill" />
+                <img src="/images/skills/bootstrap.png" alt="" class="project-skill" />
+                <img src="/images/skills/javascript.png" alt="" class="project-skill" />
+                
+              </div>
+              <div class="project-description-container">
+                <p class="project-description" >
+                Contemporary japanese cusine in London. This is a demo restaurant page 
+                </p>
+                <div class="project-card-gradient"></div>
+              </div>
+              </div>
+              <div class="project-view-more-link"> 
+                <a href="" class="btn btn-primary project-view-more-button stretched-link">
+                  View more<i class="ps-3 bi bi-plus-circle-fill"></i>
+                </a>
+                  
+              </div>
+          </div>
+
+          <!-- DIRAL -->
+          <div class="project card" >
+            <img
+              src="/images/projects/DIRAL/DIRAL.png"
+              alt="DIRAL icon"
+              class="project-image diral"
+            />
+
+            <div class="project-content">
+
+              <h3 class="project-title">
+              DIRAL
+              </h3>
+              <div class="project-skills">
+                <img src="/images/skills/html.png" alt="" class="project-skill" />
+                <img src="/images/skills/css.png" alt="" class="project-skill" />
+                <img src="/images/skills/bootstrap.png" alt="" class="project-skill" />
+                <img src="/images/skills/javascript.png" alt="" class="project-skill" />
+                
+              </div>
+              <div class="project-description-container">
+                <p class="project-description" >
+                Contemporary japanese cusine in London. This is a demo restaurant page 
+                </p>
+                <div class="project-card-gradient"></div>
+              </div>
+              </div>
+              <div class="project-view-more-link"> 
+                <a href="" class="btn btn-primary project-view-more-button stretched-link">
+                  View more<i class="ps-3 bi bi-plus-circle-fill"></i>
+                </a>
+                  
+              </div>
+          </div>
+
+          <!-- DIRAL -->
+          <div class="project card" >
+            <img
+              src="/images/projects/DIRAL/DIRAL.png"
+              alt="DIRAL icon"
+              class="project-image diral"
+            />
+
+            <div class="project-content">
+
+              <h3 class="project-title">
+              DIRAL
+              </h3>
+              <div class="project-skills">
+                <img src="/images/skills/html.png" alt="" class="project-skill" />
+                <img src="/images/skills/css.png" alt="" class="project-skill" />
+                <img src="/images/skills/bootstrap.png" alt="" class="project-skill" />
+                <img src="/images/skills/javascript.png" alt="" class="project-skill" />
+                
+              </div>
+              <div class="project-description-container">
+                <p class="project-description" >
+                Contemporary japanese cusine in London. This is a demo restaurant page 
+                </p>
+                <div class="project-card-gradient"></div>
+              </div>
+              </div>
+              <div class="project-view-more-link"> 
+                <a href="" class="btn btn-primary project-view-more-button stretched-link">
+                  View more<i class="ps-3 bi bi-plus-circle-fill"></i>
+                </a>
+                  
+              </div>
+          </div>
+
+          <!-- DIRAL -->
+          <div class="project card" >
+            <img
+              src="/images/projects/DIRAL/DIRAL.png"
+              alt="DIRAL icon"
+              class="project-image diral"
+            />
+
+            <div class="project-content">
+
+              <h3 class="project-title">
+              DIRAL
+              </h3>
+              <div class="project-skills">
+                <img src="/images/skills/html.png" alt="" class="project-skill" />
+                <img src="/images/skills/css.png" alt="" class="project-skill" />
+                <img src="/images/skills/bootstrap.png" alt="" class="project-skill" />
+                <img src="/images/skills/javascript.png" alt="" class="project-skill" />
+                
+              </div>
+              <div class="project-description-container">
+                <p class="project-description" >
+                Contemporary japanese cusine in London. This is a demo restaurant page 
+                </p>
+                <div class="project-card-gradient"></div>
+              </div>
+              </div>
+              <div class="project-view-more-link"> 
+                <a href="" class="btn btn-primary project-view-more-button stretched-link">
+                  View more<i class="ps-3 bi bi-plus-circle-fill"></i>
+                </a>
+                  
+              </div>
+          </div>
+
+          <!-- DIRAL -->
+          <div class="project card" >
+            
+
+            <div class="project-content">
+              <img
+              src="/images/projects/DIRAL/DIRAL.png"
+              alt="DIRAL icon"
+              class="project-image diral"
+            />
+              <h3 class="project-title">
+              DIRAL
+              </h3>
+              <div class="project-skills">
+                <img src="/images/skills/html.png" alt="" class="project-skill" />
+                <img src="/images/skills/css.png" alt="" class="project-skill" />
+                <img src="/images/skills/bootstrap.png" alt="" class="project-skill" />
+                <img src="/images/skills/javascript.png" alt="" class="project-skill" />
+                
+              </div>
+              <div class="project-description-container">
+                <p class="project-description" >
+                Contemporary japanese cusine in London. This is a demo restaurant page 
+                </p>
+                <div class="project-card-gradient"></div>
+              </div>
+              </div>
+              <div class="project-view-more-link"> 
+                <a href="" class="btn btn-primary project-view-more-button stretched-link">
+                  View more<i class="ps-3 bi bi-plus-circle-fill"></i>
+                </a>
+                  
+              </div>
+          </div>
+
+
+
+        </div>
+      </section>
+  
+<!-- Footer space -->
+  <section class="footer-space-section"> 
+
+  </section>
+
+    <!-- Footer cta-->
+    <section class="footer-cta-section">
+      <div class="container-xl">
+        <div class="footer-cta-container">
+          <div class="col-sm-8 footer-cta-content">
+            <h2 class="footer-title">Let’s make something <br>amazing together! </h2>
+            <h3 class="footer-text">You know about me, <br>let’s talk about you</h3>
+            <a href="contact.html"  class="btn btn-primary mt-4 sm-footer-cta-Btn">
+              <span class='cta-btn-1'>Get in touch today</span><span class='cta-btn-2'>Get in touch</span> <i class="ps-3 bi bi-chat-text-fill"></i>
+            </a>
+          </div>
+          <div class="col-sm-4 footer-image-container">
+            <img class="footer-image" src="images/Prishal_Makwana_Hi.png" alt="Image of Prishal waving">
+          </div>
+        </div>
+    </section>
+
+    <!-- Footer copyright -->
+    <footer class="footer-section">
+      <div class="container-xl">
+        <hr />
+        <div class="copyright">
+          <span class="copyright-1">Prish.al ©2022. All rights reserved.</span>
+          <span class="copyright-2"
+            >Designed and created by <a href="https://prish.al">Prishal</a></span
+          >
+        </div>
+      </div>
+    </footer>
+
+  </body>
 </html>

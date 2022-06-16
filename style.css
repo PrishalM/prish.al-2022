@@ -506,6 +506,206 @@ label {
 }
 
 /***************************************************/
+/* Projects section */
+.project-section {
+  background-color: var(--primary-cream);
+}
+
+.project-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.project-Btn {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.project-title {
+  color: var(--green-darkest);
+}
+
+.project-carousel-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.project-carousel {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+
+  scrollbar-width: thin;
+  overflow-x: auto;
+  scroll-snap-type: inline mandatory;
+  list-style-type: none;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 60px;
+}
+
+.project {
+  width: 29%;
+  background-color: var(--primary-cream);
+  padding: 30px;
+  border-radius: 50px;
+  box-shadow: 5px 5px 30px rgba(85, 81, 55, 0.25);
+  border: 5px solid var(--primary-cream);
+  justify-content: space-between;
+}
+
+.project:hover {
+  border: 5px solid var(--primary-green);
+}
+
+.project-skill {
+  height: 25px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+
+.project-image {
+  width: 40%;
+  box-shadow: 5px 5px 30px rgba(85, 81, 55, 0.25);
+}
+
+.diral,
+.quizzical {
+  border-radius: 33px;
+}
+
+.artfolio {
+  border-radius: 100px;
+}
+
+.project-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.project-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.projects-title {
+  padding-top: 50px;
+  padding-bottom: 25px;
+  font-size: 64px;
+}
+
+.project-title {
+  font-weight: 700;
+}
+
+.project-description {
+  padding-bottom: 10px;
+}
+
+.project-description-container {
+  height: 95px;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 10px;
+  text-overflow: ellipsis;
+  white-space: normal;
+  position: relative;
+}
+
+.project-card-gradient {
+  background-image: linear-gradient(to top, var(--primary-cream), transparent);
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.carousel-gradient {
+  background-image: linear-gradient(to left, var(--primary-cream), transparent);
+  height: 100%;
+  width: 10%;
+  position: absolute;
+  right: 0;
+}
+
+.project-view-more-link {
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.project-view-more-button {
+  width: fit-content !important;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.has-scrollbar::-webkit-scrollbar {
+  height: 3px;
+}
+
+.has-scrollbar::-webkit-scrollbar-button {
+  color: var(--green);
+  width: 40px;
+}
+
+/* Projects page */
+
+.project-hero-section {
+  background-color: var(--primary-cream);
+}
+
+.project-hero-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.project-cards-section {
+  background-color: var(--cream-green-A);
+
+  box-shadow: 0px 0px 30px 10px rgba(85, 81, 55, 0.25);
+  z-index: 1;
+  position: relative;
+}
+
+.project-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 30%;
+  gap: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: center;
+}
+
+.project-card {
+  min-width: 29%;
+  background-color: var(--primary-cream);
+  padding: 30px;
+  border-radius: 50px;
+  box-shadow: 5px 5px 30px rgba(85, 81, 55, 0.25);
+  border: 5px solid var(--primary-cream);
+  justify-content: center;
+}
+
+.project-card:hover {
+  border: 5px solid var(--primary-green);
+}
+
+.footer-space-section {
+  height: 200px;
+  background-color: var(--primary-cream);
+}
+
+/***************************************************/
 /* Expereince section */
 
 .sm-experience-container {
@@ -1061,6 +1261,11 @@ hr {
     padding-bottom: 35px;
   }
 
+  /* Projects *******************************/
+  .project {
+    width: 30%;
+  }
+
   /* Experience *******************************/
   .experience-title,
   .education-title,
@@ -1539,6 +1744,11 @@ hr {
     padding-bottom: 35px;
   }
 
+  /* Projects *******************************/
+  .project {
+    width: 30%;
+  }
+
   /* Experience *******************************/
   .experience-title,
   .education-title,
@@ -1858,6 +2068,10 @@ hr {
     width: 10%;
   }
 
+  .project {
+    width: 30%;
+  }
+
   .principle-container {
     justify-content: center;
   }
@@ -1878,10 +2092,17 @@ hr {
   .principle-container {
     justify-content: center;
   }
+
+  .project {
+    width: 30%;
+  }
 }
 
 /* XL screen */
 @media screen and (max-width: 1400px) and (min-width: 1200px) {
+  .project {
+    width: 30%;
+  }
 }
 
 /* above XL  */
