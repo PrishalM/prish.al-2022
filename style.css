@@ -540,6 +540,10 @@ label {
   padding-right: 60px;
 }
 
+.project-carousel-right-padding {
+  padding: 10px;
+}
+
 .project {
   width: 29%;
   background-color: var(--primary-cream);
