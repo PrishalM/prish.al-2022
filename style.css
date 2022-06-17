@@ -680,7 +680,7 @@ label {
 }
 
 .project-card {
-  min-width: 29%;
+  min-width: 35%;
   background-color: var(--primary-cream);
   padding: 30px;
   border-radius: 50px;
@@ -1255,6 +1255,10 @@ hr {
   }
 
   /* Projects *******************************/
+  .project-hero-container {
+    padding-top: 0;
+  }
+
   .project {
     width: 100%;
   }
@@ -1263,8 +1267,8 @@ hr {
     padding: 50px;
   }
 
-  .project-hero-container {
-    padding-top: 0;
+  .project-card {
+    min-width: 100%;
   }
 
   /* Experience *******************************/
@@ -1746,20 +1750,24 @@ hr {
   }
 
   /* Projects *******************************/
-  .project {
-    width: 100%;
+  .project-hero-container {
+    padding-top: 0;
   }
 
   .projects-title {
     font-size: 40px;
   }
 
+  .project {
+    width: 100%;
+  }
+
   .project-cards-container {
     padding: 50px;
   }
 
-  .project-hero-container {
-    padding-top: 0;
+  .project-card {
+    min-width: 70%;
   }
 
   /* Experience *******************************/
