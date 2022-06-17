@@ -295,13 +295,6 @@ label {
   flex-direction: row-reverse;
 }
 
-.sm-contact-form-send-Btn {
-}
-
-.sm-contact-form-send-Btn:visited,
-.sm-contact-form-send-Btn:link {
-}
-
 /***************************************************/
 /* Contact form msg sent */
 .msg-sent-body {
@@ -599,7 +592,7 @@ label {
 .projects-title {
   padding-top: 50px;
   padding-bottom: 25px;
-  font-size: 64px;
+  font-size: 40px;
 }
 
 .project-title {
@@ -1263,7 +1256,15 @@ hr {
 
   /* Projects *******************************/
   .project {
-    width: 30%;
+    width: 100%;
+  }
+
+  .project-cards-container {
+    padding: 50px;
+  }
+
+  .project-hero-container {
+    padding-top: 0;
   }
 
   /* Experience *******************************/
@@ -1509,7 +1510,7 @@ hr {
   }
 
   /* Contact Form *******************************/
-  ß .contact-form-container,
+  .contact-form-container,
   .contact-form-msg-sent-container {
     flex-direction: column-reverse;
     height: 100%;
@@ -1746,7 +1747,19 @@ hr {
 
   /* Projects *******************************/
   .project {
-    width: 30%;
+    width: 100%;
+  }
+
+  .projects-title {
+    font-size: 40px;
+  }
+
+  .project-cards-container {
+    padding: 50px;
+  }
+
+  .project-hero-container {
+    padding-top: 0;
   }
 
   /* Experience *******************************/
@@ -2068,10 +2081,20 @@ hr {
     width: 10%;
   }
 
+  /* Projects *******************************/
   .project {
-    width: 30%;
+    width: 45%;
   }
 
+  .projects-title {
+    font-size: 64px;
+  }
+
+  .project-cards-container {
+    padding: 50px;
+  }
+
+  /* Principles section */
   .principle-container {
     justify-content: center;
   }
@@ -2089,24 +2112,38 @@ hr {
 
 /* LG screen */
 @media screen and (max-width: 1200px) and (min-width: 992px) {
-  .principle-container {
-    justify-content: center;
+  /* Project section */
+
+  .projects-title {
+    font-size: 64px;
   }
 
-  .project {
-    width: 30%;
+  /* Principles section */
+  .principle-container {
+    justify-content: center;
   }
 }
 
 /* XL screen */
 @media screen and (max-width: 1400px) and (min-width: 1200px) {
+  /* Project section */
   .project {
     width: 30%;
+  }
+  .projects-title {
+    font-size: 64px;
   }
 }
 
 /* above XL  */
 @media screen and (min-width: 1400px) {
+  /* Project section */
+  .project {
+    width: 30%;
+  }
+  .projects-title {
+    font-size: 64px;
+  }
 }
 
 /* Final */
