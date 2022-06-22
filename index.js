@@ -2,7 +2,7 @@
 
 // desktop
 document
-  .getElementById("skills-view-more-deskop-btn")
+  .getElementById("skills-view-more-desktop-btn")
   .addEventListener("click", () => {
     document.getElementById("pytest").classList.remove("hide");
     document.getElementById("json-web-token").classList.remove("hide");
@@ -19,15 +19,15 @@ document
     document.getElementById("sklearn").classList.remove("hide");
 
     document
-      .getElementById("skills-view-more-deskop-btn")
+      .getElementById("skills-view-more-desktop-btn")
       .classList.add("hide");
     document
-      .getElementById("skills-view-less-deskop-btn")
+      .getElementById("skills-view-less-desktop-btn")
       .classList.remove("hide");
   });
 
 document
-  .getElementById("skills-view-less-deskop-btn")
+  .getElementById("skills-view-less-desktop-btn")
   .addEventListener("click", () => {
     document.getElementById("pytest").classList.add("hide");
     document.getElementById("json-web-token").classList.add("hide");
@@ -44,10 +44,10 @@ document
     document.getElementById("sklearn").classList.add("hide");
 
     document
-      .getElementById("skills-view-more-deskop-btn")
+      .getElementById("skills-view-more-desktop-btn")
       .classList.remove("hide");
     document
-      .getElementById("skills-view-less-deskop-btn")
+      .getElementById("skills-view-less-desktop-btn")
       .classList.add("hide");
   });
 

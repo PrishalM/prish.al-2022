@@ -97,8 +97,6 @@ h2 {
   border-radius: 50px;
   height: 60px;
   width: fit-content;
-  padding-left: 1.5%;
-  padding-right: 1.5%;
   font-weight: 600;
   font-size: 20px;
   color: var(--green-dark);
@@ -501,6 +499,12 @@ label {
   display: none;
 }
 
+#skills-view-more-desktop-btn,
+#skills-view-more-mobile-btn {
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+}
+
 /***************************************************/
 /* Projects section */
 .project-section {
@@ -698,6 +702,11 @@ label {
 
 .project-card:hover {
   border: 5px solid var(--primary-green);
+}
+
+.view-all-projects-btn {
+  margin-left: 1.5%;
+  margin-right: 1.5%;
 }
 
 .footer-space-section {
