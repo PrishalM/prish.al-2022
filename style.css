@@ -516,13 +516,15 @@ label {
   padding-bottom: 50px;
 }
 
-.project-Btn {
+.project-btn-container {
   display: flex;
   flex-direction: row-reverse;
 }
 
-.project-title {
+.index-project-title,
+.projects-project-title {
   color: var(--green-darkest);
+  font-weight: 700;
 }
 
 .project-carousel-container {
@@ -535,7 +537,7 @@ label {
 .project-carousel {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+
   gap: 40px;
   scrollbar-width: thin;
   overflow-x: auto;
@@ -565,13 +567,33 @@ label {
   border: 5px solid var(--primary-green);
 }
 
-.project-skill {
+.index-project-skill {
   height: 25px;
   padding-right: 10px;
   margin-bottom: 10px;
 }
 
-.project-image {
+.index-project-image {
+  width: 40%;
+  box-shadow: 5px 5px 30px rgba(85, 81, 55, 0.25);
+}
+
+.projects-project-skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.projects-project-skill {
+  height: 25px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+
+.projects-project-image {
   width: 40%;
   box-shadow: 5px 5px 30px rgba(85, 81, 55, 0.25);
 }
@@ -593,7 +615,7 @@ label {
   padding-bottom: 20px;
 }
 
-.project-skills {
+.index-project-skills {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -605,7 +627,6 @@ label {
 .projects-title {
   padding-top: 50px;
   padding-bottom: 25px;
-  font-size: 40px;
 }
 
 .project-title {
@@ -653,6 +674,11 @@ label {
   padding-right: 5%;
 }
 
+.project-view-more-link {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .has-scrollbar::-webkit-scrollbar {
   height: 3px;
 }
@@ -691,7 +717,7 @@ label {
 }
 
 .project-card {
-  min-width: 38%;
+  min-width: 25%;
   background-color: var(--primary-cream);
   padding: 30px;
   border-radius: 50px;
@@ -1072,6 +1098,7 @@ label {
 
 .project-status-box:hover {
   background-color: var(--cream-green-A);
+  box-shadow: none;
 }
 
 .project-icon {
@@ -1084,7 +1111,6 @@ label {
 }
 
 .project-title {
-  font-size: 64px;
   display: inline;
 }
 
@@ -1137,6 +1163,11 @@ label {
 
 .project-url i {
   font-size: 2rem;
+}
+
+.project-hr {
+  margin-top: 1%;
+  margin-bottom: 2%;
 }
 
 .project-technologies-used {
@@ -1453,6 +1484,8 @@ label {
   }
 
   /* Experience *******************************/
+  .sm-skills-title,
+  .projects-title,
   .experience-title,
   .education-title,
   .principle-title {
@@ -1953,6 +1986,8 @@ label {
   }
 
   /* Experience *******************************/
+  .sm-skills-title,
+  .projects-title,
   .experience-title,
   .education-title,
   .principle-title {
@@ -2282,6 +2317,10 @@ label {
 
   .project-cards-container {
     padding: 50px;
+  }
+
+  .project-card {
+    min-width: 40%;
   }
 
   /* Principles section */
