@@ -615,13 +615,18 @@ label {
   padding-bottom: 20px;
 }
 
-.index-project-skills {
+.index-project-skills-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.project-skill {
+  height: 40px;
+  margin: 10px;
 }
 
 .projects-title {
@@ -1044,6 +1049,7 @@ label {
 
 .project-details-section {
   background-color: var(--primary-cream);
+  padding-bottom: 35px;
 }
 
 .project-back-button {
@@ -1112,6 +1118,7 @@ label {
 
 .project-title {
   display: inline;
+  color: var(--primary-green);
 }
 
 .project-description {
@@ -1170,8 +1177,52 @@ label {
   margin-bottom: 2%;
 }
 
-.project-technologies-used {
+.project-technologies-used-title,
+.project-collaboration-title {
   font-size: 20px;
+}
+
+.technologies-container {
+  display: flex;
+}
+
+.project-skill-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.project-skill-text {
+  text-align: center;
+  font-weight: 500;
+  font-size: 10px;
+}
+
+.project-skill-img {
+  display: flex;
+  justify-content: center;
+  width: 35px;
+  margin: 10px;
+}
+
+.project-skill-disclaimer {
+  font-size: 12px;
+}
+
+.github-collaboration-link {
+  color: var(--green-darkest);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.github-collaboration-link:hover {
+  color: var(--green-cream-D);
+}
+
+.github-collaboration-link-text {
+  text-decoration: underline;
 }
 
 .project-main-body-section {
@@ -1184,9 +1235,30 @@ label {
   flex-wrap: wrap;
 }
 
-.project-image {
+.project-main-body-image-header {
+  width: 100%;
+}
+
+.project-explore-title {
+  padding-bottom: 0px;
+}
+
+.project-explore-subtitle {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.project-external-btn-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.project-image-container {
   width: 50%;
-  height: 50%;
+}
+
+.project-image {
+  width: 100%;
 }
 
 .project-image-1 {
@@ -1445,7 +1517,7 @@ label {
   }
 
   .skill-item {
-    width: 6%;
+    width: 8%;
     margin-left: 10px;
     margin-right: 10px;
   }
