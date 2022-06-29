@@ -573,6 +573,7 @@ header {
 }
 
 .projects-title {
+  color: var(--primary-green);
   padding-top: 50px;
   padding-bottom: 25px;
   font-weight: 700;
@@ -1050,6 +1051,7 @@ label {
 }
 
 .projects-subtitle {
+  color: var(--green-darkest);
   font-size: 24px;
   font-weight: 500;
 }
