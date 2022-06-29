@@ -441,8 +441,7 @@ header {
   display: none;
 }
 
-#skills-view-more-desktop-btn,
-#skills-view-more-mobile-btn {
+#skills-view-more-desktop-btn {
   margin-left: 1.5%;
   margin-right: 1.5%;
 }
@@ -455,7 +454,6 @@ header {
 }
 
 .project-container {
-  padding-top: 50px;
   padding-bottom: 50px;
 }
 
@@ -1297,7 +1295,7 @@ label {
 .project-explore-subtitle {
   font-size: 24px;
   font-weight: 500;
-  width: 75%;
+  width: 70%;
 }
 
 .project-subtitle-and-external-btn-container {
@@ -1385,12 +1383,396 @@ label {
   .btn-outline-primary:link,
   .btn-outline-primary:visited {
     height: 50px;
-    width: 160px;
+    width: fit-content;
     font-weight: 600;
     font-size: 16px;
   }
 
-  /* Contact Form *******************************/
+  /* Header / Navbar *******************************/
+  .navbar {
+    height: 80px;
+  }
+
+  .navbar-brand {
+    font-size: 24px;
+  }
+
+  .navbar-brand:hover {
+    font-size: 24px;
+  }
+
+  .cta-btn-1 {
+    display: none;
+  }
+
+  .cta-btn-2 {
+    display: contents;
+  }
+
+  /* Footer CTA *******************************/
+  .footer-cta-section {
+    height: 415px;
+  }
+
+  .footer-cta-container {
+    height: 492px;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 75px;
+    bottom: 120px;
+  }
+
+  .footer-cta-content {
+    padding-left: 0;
+    margin-bottom: 40%;
+  }
+
+  .footer-cta-content a {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-title {
+    padding-top: 50px;
+    padding-bottom: 5px;
+    font-size: 32px;
+  }
+
+  .footer-text {
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 20px;
+  }
+
+  .sm-footer-cta-Btn {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+
+  .footer-image-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-image {
+    width: 55%;
+  }
+
+  /* Footer copyright *******************************/
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .copyright-1 {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .copyright-2 {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  /* Index page *******************************/
+
+  /* Hero section *******************************/
+  .hero-container {
+    background-image: url("images/Prishal_Makwana.png");
+    background-size: 60% auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 500px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .hero-text {
+    padding: 0;
+  }
+
+  .hero-h1 {
+    font-size: 40px;
+  }
+
+  .hero-p {
+    font-size: 20px;
+    margin: 0;
+    background-color: var(--primary-cream);
+  }
+
+  .sm-social-container {
+    justify-content: flex-end;
+    display: flex;
+    width: 100%;
+    margin-top: 29px;
+  }
+
+  .social-container {
+    height: 135px;
+    width: 45px;
+    margin-top: 0px;
+  }
+
+  .social-btn {
+    width: 45px;
+    height: 45px;
+  }
+
+  .social-btn i {
+    font-size: 25px;
+  }
+
+  .hero-cta-1 {
+    display: none !important;
+  }
+
+  .hero-cta-2 {
+    display: flex;
+  }
+
+  .sm-cta-container {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 90px;
+  }
+
+  .gradient {
+    height: 100px;
+    width: 100%;
+    position: relative;
+    bottom: 100px;
+  }
+
+  /* Tech skills section *******************************/
+  .tech-skills-container {
+    padding-bottom: 50px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .skills-title {
+    display: none;
+  }
+
+  .sm-skills-title {
+    font-size: 32px;
+    padding-top: 35px;
+    padding-bottom: 25px;
+  }
+
+  .card-body {
+    padding: 0 !important;
+  }
+
+  .skills-container {
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .sm-skills-title-container {
+    width: 100%;
+    display: flex;
+    padding-left: 12px;
+  }
+
+  .skill-item {
+    width: 8%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .skill-text {
+    font-size: 10px;
+  }
+
+  .skills-btn-container {
+    display: none;
+  }
+
+  .sm-skills-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 12px;
+    padding-bottom: 35px;
+  }
+
+  /* Projects section *******************************/
+  .project-carousel {
+    gap: 20px;
+  }
+
+  .project {
+    width: 100%;
+  }
+
+  .project-card {
+    min-width: 90%;
+  }
+
+  /* Experience section *******************************/
+  .sm-skills-title,
+  .index-projects-title,
+  .experience-title,
+  .education-title,
+  .principle-title {
+    font-size: 32px;
+    padding-top: 35px;
+    padding-bottom: 25px;
+    font-weight: 700;
+  }
+
+  .experience-container {
+    display: none;
+  }
+
+  .sm-experience-container {
+    display: grid;
+  }
+
+  .company-col {
+    justify-content: flex-start;
+    text-align: end;
+    padding-left: 0;
+  }
+
+  .company-logo-container {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    height: 75px;
+    width: 190px;
+    position: relative;
+    left: -8%;
+  }
+
+  .company-logo {
+    width: 130px;
+  }
+
+  .company-name {
+    font-size: 20px;
+  }
+
+  .company-period {
+    margin-bottom: 0;
+  }
+
+  .company-period,
+  .company-length {
+    font-size: 16px;
+  }
+
+  .job-title {
+    font-size: 20px;
+  }
+
+  .job-detail-1 {
+    font-size: 16px;
+    padding-left: 0;
+  }
+
+  .sm-experience-Btn {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 30px;
+  }
+
+  .sm-experience-Btn a {
+    color: var(--primary-cream);
+  }
+
+  /* Education section *******************************/
+  .education-container {
+    display: none;
+  }
+
+  .sm-education-container {
+    display: grid;
+  }
+
+  .school-col {
+    justify-content: flex-start;
+    text-align: end;
+    padding-left: 0;
+  }
+
+  .school-logo-container {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    height: 75px;
+    width: 190px;
+    position: relative;
+    left: -8%;
+    margin-bottom: 0px;
+  }
+
+  .school-logo {
+    height: 50px;
+  }
+
+  .school-title {
+    font-size: 20px;
+    padding-top: 15px;
+  }
+
+  .school-date {
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+
+  .school-description {
+    font-size: 16px;
+    padding-top: 10px;
+  }
+
+  .school-date,
+  .school-description {
+    text-align: left;
+    padding-left: 0;
+  }
+
+  .sm-education-Btn {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 30px;
+  }
+
+  .sm-education-Btn a {
+    color: var(--green-darkest);
+  }
+
+  /* Principles section  *******************************/
+  .principle-container {
+    justify-content: center;
+    padding-bottom: 150px;
+  }
+
+  .principle {
+    padding: 40px;
+    min-width: 280px;
+    height: 140px;
+    margin: 10px;
+    box-shadow: 0px 5px 10px 2px rgba(85, 81, 55, 0.25);
+  }
+
+  .principle-icon {
+    font-size: 2rem;
+  }
+
+  .principle-text {
+    font-size: 20px;
+  }
+
+  /* Contact form page *******************************/
   .contact-form-bkg {
     padding-top: 5vh;
     padding-bottom: 8vh;
@@ -1469,7 +1851,7 @@ label {
     left: 32%;
   }
 
-  /* Contact form msg sent  *******************************/
+  /* Contact form msg sent page *******************************/
   .contact-form-msg-sent-text {
     font-size: 18px;
     text-align: center;
@@ -1487,389 +1869,51 @@ label {
     padding-bottom: 60%;
   }
 
-  /* Header *******************************/
-  .navbar {
-    height: 80px;
-  }
-
-  .navbar-brand {
-    font-size: 24px;
-  }
-
-  .navbar-brand:hover {
-    font-size: 24px;
-  }
-
-  .cta-btn-1 {
-    display: none;
-  }
-
-  .cta-btn-2 {
-    display: contents;
-  }
-
-  /* Hero *******************************/
-  .hero-container {
-    background-image: url("images/Prishal_Makwana.png");
-    background-size: 60% auto;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    height: 500px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .hero-content {
-    flex-direction: column;
-  }
-
-  .hero-text {
-    padding: 0;
-  }
-
-  .hero-h1 {
-    font-size: 40px;
-  }
-
-  .hero-p {
-    font-size: 20px;
-    margin: 0;
-    background-color: var(--primary-cream);
-  }
-
-  .sm-social-container {
-    justify-content: flex-end;
-    display: flex;
-    width: 100%;
-    margin-top: 29px;
-  }
-
-  .social-container {
-    height: 135px;
-    width: 45px;
-    margin-top: 0px;
-  }
-
-  .social-btn {
-    width: 45px;
-    height: 45px;
-  }
-
-  .social-btn i {
-    font-size: 25px;
-  }
-
-  .hero-cta-1 {
-    display: none !important;
-  }
-
-  .hero-cta-2 {
-    display: flex;
-  }
-
-  .sm-cta-container {
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 90px;
-  }
-
-  .gradient {
-    height: 100px;
-    width: 100%;
-    position: relative;
-    bottom: 100px;
-  }
-
-  /* Tech skills *******************************/
-  .tech-skills-container {
-    padding-bottom: 50px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .skills-title {
-    display: none;
-  }
-
-  .sm-skills-title {
-    font-size: 32px;
-    padding-top: 35px;
-    padding-bottom: 25px;
-  }
-
-  .card-body {
-    padding: 0 !important;
-  }
-
-  .skills-container {
-    border-radius: 0;
-    padding: 0;
-  }
-
-  .sm-skills-title-container {
-    width: 100%;
-    display: flex;
-    padding-left: 12px;
-  }
-
-  .skill-item {
-    width: 8%;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .skill-text {
-    font-size: 10px;
-  }
-
-  .skills-btn-container {
-    display: none;
-  }
-
-  .sm-skills-btn-container {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    padding-right: 12px;
-    padding-bottom: 35px;
-  }
-
-  /* Projects *******************************/
-
-  .project-carousel {
-    gap: 20px;
-  }
-  .project {
-    width: 100%;
-  }
-
-  .project-card {
-    min-width: 90%;
-  }
-
-  /* Experience *******************************/
-  .sm-skills-title,
-  .experience-title,
-  .education-title,
-  .principle-title {
-    font-size: 32px;
-    padding-top: 35px;
-    padding-bottom: 25px;
-    font-weight: 700;
-  }
-
-  .experience-container {
-    display: none;
-  }
-
-  .sm-experience-container {
-    display: grid;
-  }
-
-  .company-col {
-    justify-content: flex-start;
-    text-align: end;
-    padding-left: 0;
-  }
-
-  .company-logo-container {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    height: 75px;
-    width: 190px;
-    position: relative;
-    left: -8%;
-  }
-
-  .company-logo {
-    width: 130px;
-  }
-
-  .company-name {
-    font-size: 20px;
-  }
-
-  .company-period {
-    margin-bottom: 0;
-  }
-
-  .company-period,
-  .company-length {
-    font-size: 16px;
-  }
-
-  .job-title {
-    font-size: 20px;
-  }
-
-  .job-detail-1 {
-    font-size: 16px;
-    padding-left: 0;
-  }
-
-  .sm-experience-Btn {
-    display: flex;
-    flex-direction: row-reverse;
-    margin-bottom: 30px;
-  }
-
-  .sm-experience-Btn a {
-    color: var(--primary-cream);
-  }
-
-  /* Education *******************************/
-  .education-container {
-    display: none;
-  }
-
-  .sm-education-container {
-    display: grid;
-  }
-
-  .school-col {
-    justify-content: flex-start;
-    text-align: end;
-    padding-left: 0;
-  }
-
-  .school-logo-container {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    height: 75px;
-    width: 190px;
-    position: relative;
-    left: -8%;
-    margin-bottom: 0px;
-  }
-
-  .school-logo {
-    height: 50px;
-  }
-
-  .school-title {
-    font-size: 20px;
-    padding-top: 15px;
-  }
-
-  .school-date {
-    margin-bottom: 0;
-    font-size: 18px;
-  }
-
-  .school-description {
-    font-size: 16px;
-    padding-top: 10px;
-  }
-
-  .school-date,
-  .school-description {
-    text-align: left;
-    padding-left: 0;
-  }
-
-  .sm-education-Btn {
-    display: flex;
-    flex-direction: row-reverse;
-    margin-bottom: 30px;
-  }
-
-  .sm-education-Btn a {
-    color: var(--green-darkest);
-  }
-
-  /* Principles *******************************/
-  .principle-container {
-    justify-content: center;
-    padding-bottom: 150px;
-  }
-
-  .principle {
-    padding: 40px;
-    min-width: 280px;
-    height: 140px;
-    margin: 10px;
-    box-shadow: 0px 5px 10px 2px rgba(85, 81, 55, 0.25);
-  }
-
-  .principle-icon {
-    font-size: 2rem;
-  }
-
-  .principle-text {
-    font-size: 20px;
-  }
-
-  /* Footer CTA *******************************/
-  .footer-cta-section {
-    height: 415px;
-  }
-
-  .footer-cta-container {
-    height: 492px;
-    flex-direction: column;
-    text-align: center;
-    border-radius: 75px;
-    bottom: 120px;
-  }
-
-  .footer-cta-content {
-    padding-left: 0;
-    margin-bottom: 40%;
-  }
-
-  .footer-cta-content a {
-    display: flex;
-    justify-content: center;
-  }
-
-  .footer-title {
-    padding-top: 50px;
-    padding-bottom: 5px;
-    font-size: 32px;
-  }
-
-  .footer-text {
-    padding-bottom: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    font-size: 20px;
-  }
-
-  .sm-footer-cta-Btn {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-  }
-
-  .footer-image-container {
-    display: flex;
-    justify-content: center;
-  }
-
-  .footer-image {
-    width: 55%;
-  }
-
-  /* Footer copyright *******************************/
-  .copyright {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    padding-top: 10px;
-    padding-bottom: 20px;
-  }
-
-  .copyright-1 {
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  .copyright-2 {
-    display: flex;
-    justify-content: flex-end;
-  }
-
+  /* Project overview page *******************************/
   .projects-subtitle {
     font-size: 20px;
+  }
+
+  /* Project page *******************************/
+  .project-details-1,
+  .project-details-2 {
+    flex-direction: column;
+  }
+
+  .project-details-A,
+  .project-details-B {
+    width: 100%;
+  }
+
+  .project-details-B {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-status-box {
+    width: fit-content;
+    align-self: center;
+  }
+
+  .project-explore-subtitle {
+    width: 100%;
+  }
+
+  .project-external-btn-container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .project-subtitle-and-external-btn-container {
+    flex-direction: column;
+  }
+
+  .project-image-container {
+    width: 100%;
+  }
+
+  .project-image-text {
+    padding: 20px;
   }
 }
 
@@ -1889,9 +1933,71 @@ label {
   .btn-outline-primary:link,
   .btn-outline-primary:visited {
     height: 50px;
-    width: 160px;
+    width: fit-content;
     font-weight: 600;
     font-size: 16px;
+  }
+
+  /* Footer CTA *******************************/
+  .footer-cta-section {
+    height: 415px;
+  }
+
+  .footer-cta-container {
+    height: 450px;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 75px;
+    bottom: 90px;
+  }
+
+  .footer-cta-content {
+    padding-left: 0;
+    margin-bottom: 25%;
+  }
+
+  .footer-cta-content a {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-title {
+    padding-top: 50px;
+    padding-bottom: 5px;
+    font-size: 32px;
+  }
+
+  .footer-text {
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 24px;
+  }
+
+  .sm-footer-cta-Btn {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+
+  /* Footer copyright *******************************/
+
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .copyright-1 {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .copyright-2 {
+    display: flex;
+    justify-content: flex-end;
   }
 
   /* Header / Navbar *******************************/
@@ -1914,6 +2020,8 @@ label {
   .cta-btn-2 {
     display: contents;
   }
+
+  /* Index page *******************************/
 
   /* Hero section *******************************/
   .hero-container {
@@ -2209,69 +2317,7 @@ label {
     font-size: 20px;
   }
 
-  /* Footer CTA *******************************/
-  .footer-cta-section {
-    height: 415px;
-  }
-
-  .footer-cta-container {
-    height: 450px;
-    flex-direction: column;
-    text-align: center;
-    border-radius: 75px;
-    bottom: 90px;
-  }
-
-  .footer-cta-content {
-    padding-left: 0;
-    margin-bottom: 25%;
-  }
-
-  .footer-cta-content a {
-    display: flex;
-    justify-content: center;
-  }
-
-  .footer-title {
-    padding-top: 50px;
-    padding-bottom: 5px;
-    font-size: 32px;
-  }
-
-  .footer-text {
-    padding-bottom: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    font-size: 24px;
-  }
-
-  .sm-footer-cta-Btn {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-  }
-
-  /* Footer copyright *******************************/
-
-  .copyright {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    padding-top: 10px;
-    padding-bottom: 20px;
-  }
-
-  .copyright-1 {
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  .copyright-2 {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  /* Contact Form page *******************************/
+  /* Contact form page *******************************/
   .contact-form-container,
   .contact-form-msg-sent-container {
     flex-direction: column-reverse;
@@ -2362,10 +2408,37 @@ label {
     width: 29%;
     left: 37%;
   }
+
+  .project-details-1,
+  .project-details-2 {
+    flex-direction: column;
+  }
+
+  .project-details-A,
+  .project-details-B {
+    width: 100%;
+  }
+
+  .project-details-B {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-status-box {
+    width: fit-content;
+    align-self: center;
+  }
+
+  .project-image-container {
+    width: 100%;
+  }
 }
 
 /* MD screen */
 @media screen and (max-width: 992px) and (min-width: 768px) {
+  /* Index page  *******************************/
+
+  /* Hero section *******************************/
   .hero-container {
     background-size: auto 90%;
     background-position: right bottom;
@@ -2383,7 +2456,7 @@ label {
     width: 9%;
   }
 
-  /* Projects *******************************/
+  /* Projects section *******************************/
   .project {
     width: 45%;
   }
@@ -2419,7 +2492,7 @@ label {
     bottom: 140px;
   }
 
-  /* Contact Form *******************************/
+  /* Contact form page *******************************/
 
   .contact-form-container,
   .contact-form-msg-sent-container {
@@ -2505,24 +2578,82 @@ label {
   .close-btn {
     padding-bottom: 30%;
   }
+
+  /* Project page *******************************/
+  .project-details-1,
+  .project-details-2 {
+    flex-direction: column;
+  }
+
+  .project-details-A,
+  .project-details-B {
+    width: 100%;
+  }
+
+  .project-details-B {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-status-box {
+    width: fit-content;
+    align-self: center;
+  }
+
+  .project-image-container {
+    width: 100%;
+  }
+
+  .project-subtitle-and-external-btn-container {
+    flex-direction: column;
+  }
 }
 
 /* LG screen */
 @media screen and (max-width: 1200px) and (min-width: 992px) {
-  /* Project section */
+  /* Index page *******************************/
+
+  /* Principles section *******************************/
+  .principle-container {
+    justify-content: center;
+  }
+
+  /* Project overview page *******************************/
   .projects-title {
     font-size: 64px;
   }
 
-  /* Principles section */
-  .principle-container {
-    justify-content: center;
+  /* Project page *******************************/
+  .project-details-1,
+  .project-details-2 {
+    flex-direction: column;
+  }
+
+  .project-details-A,
+  .project-details-B {
+    width: 100%;
+  }
+
+  .project-details-B {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-status-box {
+    width: fit-content;
+    align-self: center;
+  }
+
+  .project-image-container {
+    width: 100%;
   }
 }
 
 /* XL screen */
 @media screen and (max-width: 1400px) and (min-width: 1200px) {
-  /* Project section */
+  /* Index page *******************************/
+
+  /* Project section *******************************/
   .project {
     width: 30%;
   }
@@ -2534,7 +2665,9 @@ label {
 
 /* XL screen and larger  */
 @media screen and (min-width: 1400px) {
-  /* Project section */
+  /* Index page *******************************/
+
+  /* Project section *******************************/
   .project {
     width: 30%;
   }
