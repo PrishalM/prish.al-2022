@@ -556,6 +556,11 @@ header {
   padding: 1%;
 }
 
+.prish-al2021 {
+  padding: 2%;
+  background-color: #edecec;
+}
+
 .project-content {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -597,6 +602,7 @@ header {
   overflow: hidden;
   margin-bottom: 10px;
   position: relative;
+  font-weight: 500;
 }
 
 .github-repo-btn-container {
@@ -1076,7 +1082,7 @@ label {
 }
 
 .project-card {
-  min-width: 25%;
+  min-width: 33%;
   background-color: var(--primary-cream);
   padding: 30px;
   border-radius: 50px;
