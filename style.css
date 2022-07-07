@@ -276,7 +276,14 @@ header {
   display: flex;
   justify-content: space-between;
   padding-top: 25px;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
+}
+
+.limited-company-disclaimer {
+  color: var(--green-cream-D);
+  font-size: 14px;
+  text-align: center;
+  padding-bottom: 15px;
 }
 
 /***************************************************/

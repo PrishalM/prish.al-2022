@@ -17,7 +17,6 @@ document
     document.getElementById("jupyter").classList.remove("hide");
     document.getElementById("pandas").classList.remove("hide");
     document.getElementById("sklearn").classList.remove("hide");
-
     document
       .getElementById("skills-view-more-desktop-btn")
       .classList.add("hide");
