@@ -1275,6 +1275,12 @@ label {
   font-size: 2rem;
 }
 
+.project-disclaimer {
+  padding-left: 15%;
+  padding-right: 15%;
+  font-size: 14px;
+}
+
 .project-technologies-used-title,
 .project-collaboration-title {
   font-size: 20px;
