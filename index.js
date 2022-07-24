@@ -1,3 +1,5 @@
+window.location.reload();
+
 // Skills Button
 
 // desktop
