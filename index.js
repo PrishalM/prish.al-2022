@@ -1,11 +1,10 @@
-window.location.reload();
-
 // Skills Button
 
 // desktop
 document
   .getElementById("skills-view-more-desktop-btn")
   .addEventListener("click", () => {
+    document.getElementById("react-router").classList.remove("hide");
     document.getElementById("pytest").classList.remove("hide");
     document.getElementById("json-web-token").classList.remove("hide");
     document.getElementById("bcrypt").classList.remove("hide");
@@ -14,6 +13,7 @@ document
     document.getElementById("postgresql").classList.remove("hide");
     document.getElementById("mongodb").classList.remove("hide");
     document.getElementById("docker").classList.remove("hide");
+    document.getElementById("python").classList.remove("hide");
     document.getElementById("flask").classList.remove("hide");
     document.getElementById("django").classList.remove("hide");
     document.getElementById("jupyter").classList.remove("hide");
@@ -30,6 +30,7 @@ document
 document
   .getElementById("skills-view-less-desktop-btn")
   .addEventListener("click", () => {
+    document.getElementById("react-router").classList.add("hide");
     document.getElementById("pytest").classList.add("hide");
     document.getElementById("json-web-token").classList.add("hide");
     document.getElementById("bcrypt").classList.add("hide");
@@ -38,6 +39,7 @@ document
     document.getElementById("postgresql").classList.add("hide");
     document.getElementById("mongodb").classList.add("hide");
     document.getElementById("docker").classList.add("hide");
+    document.getElementById("python").classList.add("hide");
     document.getElementById("flask").classList.add("hide");
     document.getElementById("django").classList.add("hide");
     document.getElementById("jupyter").classList.add("hide");
@@ -56,6 +58,7 @@ document
 document
   .getElementById("skills-view-more-mobile-btn")
   .addEventListener("click", () => {
+    document.getElementById("react-router").classList.remove("hide");
     document.getElementById("pytest").classList.remove("hide");
     document.getElementById("json-web-token").classList.remove("hide");
     document.getElementById("bcrypt").classList.remove("hide");
@@ -64,6 +67,7 @@ document
     document.getElementById("postgresql").classList.remove("hide");
     document.getElementById("mongodb").classList.remove("hide");
     document.getElementById("docker").classList.remove("hide");
+    document.getElementById("python").classList.remove("hide");
     document.getElementById("flask").classList.remove("hide");
     document.getElementById("django").classList.remove("hide");
     document.getElementById("jupyter").classList.remove("hide");
@@ -81,6 +85,7 @@ document
 document
   .getElementById("skills-view-less-mobile-btn")
   .addEventListener("click", () => {
+    document.getElementById("react-router").classList.add("hide");
     document.getElementById("pytest").classList.add("hide");
     document.getElementById("json-web-token").classList.add("hide");
     document.getElementById("bcrypt").classList.add("hide");
@@ -89,6 +94,7 @@ document
     document.getElementById("postgresql").classList.add("hide");
     document.getElementById("mongodb").classList.add("hide");
     document.getElementById("docker").classList.add("hide");
+    document.getElementById("python").classList.add("hide");
     document.getElementById("flask").classList.add("hide");
     document.getElementById("django").classList.add("hide");
     document.getElementById("jupyter").classList.add("hide");
